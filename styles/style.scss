@@ -19,5 +19,32 @@ main {
         font-family: 'Source Code Pro', sans-serif;
         font-size: 1.5rem;
         font-weight: 300;
+        text-align: center;
+        position: relative;
     }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.blink {
+    position: absolute;
+    right: - 1%;
+    bottom: 19%;
+    // right: 10px;
+    display: inline-block;
+    width: 3px;
+    height: 25px;
+    background: #FEC307;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    animation-duration: 1s;
 }
