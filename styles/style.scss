@@ -17,11 +17,15 @@ main {
     h1 {
         color: #FEC307;
         font-family: 'Source Code Pro', sans-serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 300;
         text-align: center;
         position: relative;
     }
+}
+
+a {
+  text-decoration: none;
 }
 
 @keyframes blink-animation {
@@ -37,14 +41,44 @@ main {
 
 .blink {
     position: absolute;
-    right: - 1%;
     bottom: 19%;
-    // right: 10px;
     display: inline-block;
-    width: 3px;
-    height: 25px;
+    width: 5px;
+    height: 35px;
     background: #FEC307;
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
     animation-duration: 1s;
+}
+
+.content {
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  h1 {
+    width: 100%;
+  }
+  .social {
+    margin-top: 15px;
+    width: 80%;
+    color: #FEC307;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    a:visited {
+      color: #FEC307;
+    }
+    a:hover {
+      color: darkorange;
+    }
+  }
+}
+
+@media (max-width: 623px) {
+  .blink {
+    bottom: 8%;
+  }
 }

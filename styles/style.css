@@ -150,10 +150,13 @@ main {
   main h1 {
     color: #FEC307;
     font-family: 'Source Code Pro', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: center;
     position: relative; }
+
+a {
+  text-decoration: none; }
 
 @keyframes blink-animation {
   to {
@@ -165,13 +168,46 @@ main {
 
 .blink {
   position: absolute;
-  right: -1%;
   bottom: 19%;
   display: inline-block;
-  width: 3px;
-  height: 25px;
+  width: 5px;
+  height: 35px;
   background: #FEC307;
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
+
+.content {
+  max-width: 800px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center; }
+  .content h1 {
+    width: 100%; }
+  .content .social {
+    margin-top: 15px;
+    width: 80%;
+    color: #FEC307;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .content .social a:visited {
+      color: #FEC307; }
+    .content .social a:hover {
+      color: darkorange; }
+
+@media (max-width: 623px) {
+  .blink {
+    bottom: 8%; } }
