@@ -167,4 +167,44 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+header {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/headerBackground.jpg);
+  height: 75vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .content {
+  display: flex;
+  justify-content: space-around;
+}
+header .text {
+  width: 45;
+}
+
+.headshot {
+  padding-right: 10%;
+}
+.headshot img {
+  width: 100%;
+  display: inline-block;
+}
+
+html {
+  font-size: 125%;
+}
+
+.content {
+  width: 53%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
