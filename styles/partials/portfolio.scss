@@ -1,0 +1,33 @@
+.portfolio {
+    // Photo by Paul Gilmore on Unsplash
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3)), url(../assets/portfolioBackground.jpg);
+    // background: url(../assets/portfolioBackground.jpg);
+    background-size: cover;
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        // border: 1px solid cyan;
+        max-height: 500px;
+    }
+    
+    .info, .siteImage {
+        width: 50%;
+        min-width: 200px;
+    }
+    .info {
+        padding: 10%;
+    }
+    .siteImage {
+        overflow-y: scroll;
+        max-height: 500PX;
+    }
+    .description {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+}
+
+
+

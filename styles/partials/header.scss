@@ -1,7 +1,7 @@
 header {
     // Photo by Asher Ward on Unsplash
-    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../assets/headerBackground.jpg);
-    height: 75vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(../assets/headerBackground.jpg);
+    height: 65vh;
     background-size: cover;
     position: relative;
     display: flex;
@@ -17,12 +17,36 @@ header {
 }
 
 .headshot {
-    // width: 400%;
+    width: 100%;
     padding-right: 10%;
     img {
         width: 100%;
         display: inline-block;
     }
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.headerLine {
+    background: black;
+    width: 50px;
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+p.about {
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: rgb(45, 45, 45);
+    opacity: 0.85; 
+    font-weight: 300;
 }
 
 // linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),

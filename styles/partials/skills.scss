@@ -1,0 +1,21 @@
+.skills {
+    padding: 5% 0;
+    h2 {
+        text-align: center;
+    }
+    .skillIcons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .skillIcons i {
+        font-size: 50px;
+        color: #cccccc;
+    }
+
+    .skillIcons p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+    }
+}

@@ -3,13 +3,78 @@ html {
 }
 
 .content { 
-    width: 53%;
+    width: 60%;
     margin: 0 auto;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    // text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #cccc;
+}
+
+.sectionLine {
+    background: black;
+    width: 1px;
+    height: 75px;
+    position: absolute;
+    top: 92.5%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+    margin-right: 10px;
+    p {
+        margin: 0;
+        padding: 10px;
+        border-right: 1px solid white;
+    }
+    .linkArrow {
+        padding: 10px;
+    }
+    &:hover {
+        background: #cccc;
+        .linkArrow {
+            color: black;
+        }
+        p {
+            border-right: none;
+        }
+
+    }
 }

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald:300,400" rel="stylesheet">
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="styles/style.css">
     <!-- html icon -->
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -40,6 +40,7 @@
     <header>
         <nav>
             <!-- hamburger menu -->
+            <i class="fas fa-bars"></i>
         </nav>
         <div class="content">
             <div class="headshot">
@@ -50,10 +51,8 @@
                 <h1>Web Developer</h1>
                 <div class="headerLine"></div>
                 <p class="about">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ratione quidem a doloremque!
-                    Libero laboriosam magnam dolor sapiente doloremque est et dolorem veritatis iste, sit iure
-                    maiores hic vel nobis ut distinctio dolores officiis. Voluptates quam ad quis? Laboriosam eius
-                    iste ex commodi, aliquam eveniet quibusdam? Quod minus doloribus at.
+                    I'm a Toronto-based web-developer something something. I have a backround in audio and a passion for
+                    creative troubleshooting. I'm looking forward to my next coding opportunity!
                 </p>
             </div>
         </div>
@@ -65,34 +64,70 @@
                 <h2>Skills</h2>
                 <div class="skillIcons">
                     <!-- html5 -->
-                    <i class="devicon-html5-plain-wordmark"></i>
+                    <div class="skill">
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML5</p>
+                    </div>
                     <!-- css3 -->
-                    <i class="devicon-css3-plain-wordmark"></i>
+                    <div class="skill">
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS3</p>
+                    </div>
                     <!-- sass -->
-                    <i class="devicon-sass-original"></i>
+                    <div class="skill">
+                        <i class="devicon-sass-original"></i>
+                        <p>Sass</p>
+                    </div>
                     <!-- javascript -->
-                    <i class="devicon-javascript-plain"></i>
+                    <div class="skill">
+                        <i class="devicon-javascript-plain"></i>
+                        <p>JavaScript</p>
+                    </div>
                     <!-- jquery -->
-                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <div>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>JQuery</p>
+                    </div>
                     <!-- react -->
-                    <i class="devicon-react-original-wordmark"></i>
+                    <div class="skill">
+                        <i class="devicon-react-original"></i>
+                        <p>React</p>
+                    </div>
                     <!-- github -->
-                    <i class="devicon-github-plain-wordmark"></i>
+                    <div class="skill">
+                        <i class="devicon-github-plain"></i>
+                        <p>GitHub</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="portfolio">
             <div class="item">
                 <!-- beachstays -->
-                <div class="description">
-                    <h3>PSD Conversion</h3>
-                    <h4>HTML5 / CSS3 / Sass</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium dicta unde possimus
-                        nisi facilis aut debitis illo, reiciendis dolores.</p>
-                </div>
-                <div class="siteImage">
-                    <p>placeholder - beachstays image</p>
-                </div>
+                <div class="info">
+                    <h2>PSD Conversion</h2>
+                    <h3>HTML5 / CSS3 / Sass</h3>
+                    <p class="description">A fully responsive, multi-page PSD conversion.</p>
+                    <a href="https://glenrj.github.io/glenMccannProject2/" target="_blank">
+                        <div class="link">
+                            <p>View Live</p>
+                            <div class="linkArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/glenrj/glenMccannProject2" target="_blank">
+                        <div class="link">
+                            <p>View on GitHub</p>
+                            <div class="linkArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            <div class="siteImage beachstays">
+                <img src="./assets/beachstays.png" alt="Preview image of a beach-themed travel site.">
+            </div>
             </div>
             <!-- tournament -->
             <div class="item">
@@ -100,8 +135,8 @@
                     <p>placeholder - Tournament image</p>
                 </div>
                 <div class="description">
-                    <h3>Tournament App</h3>
-                    <h4>HTML5 / CSS3 / Sass / JavaScript / JQuery</h4>
+                    <h2>Tournament App</h2>
+                    <h3>HTML5 / CSS3 / Sass / JavaScript / JQuery</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam molestiae fugit animi soluta
                         nobis dicta minima cumque aperiam atque incidunt!</p>
                 </div>
@@ -109,8 +144,8 @@
             <!-- your story -->
             <div class="item">
                 <div class="description">
-                    <h3>Your Story</h3>
-                    <h4>HTML5 / CSS3 / React / Firebase</h4>
+                    <h2>Your Story</h2>
+                    <h3>HTML5 / CSS3 / React / Firebase</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos asperiores, cum ipsa
                         iusto porro. Commodi, amet nemo? Adipisci, voluptates!</p>
                 </div>
@@ -124,7 +159,7 @@
                     <p>placeholder - doomsday image</p>
                 </div>
                 <div class="description">
-                    <h3>To Doom List</h3>
+                    <h2>To Doom List</h2>
                     <h4>HTML5 / CSS3 / React / Firebase</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto rerum porro ad voluptatem
                         voluptatibus consectetur nihil, itaque hic cum.</p>
@@ -134,7 +169,7 @@
         <section class="contact">
             <div class="content">
                 <h2>Drop A Line</h2>
-                <form action="https://formspree.io/glenmccann2@email.com" method="POST">
+                <form action="https://formspree.io/glenmccann2@gmail.com" method="POST">
                     <div class="upperForm">
                         <input type="text" name="name" placeholder="Name *">
                         <input type="text" name="email" placeholder="Email Address *">
