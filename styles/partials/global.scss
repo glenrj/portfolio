@@ -27,9 +27,9 @@ h2 {
 h3 {
     font-family: 'Open Sans', sans-serif;
     // text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
-    color: #cccc;
+    color: rgb(177, 176, 176);
 }
 
 .sectionLine {
@@ -75,6 +75,15 @@ a {
         p {
             border-right: none;
         }
-
     }
+}
+
+a:focus .link {
+    background: #cccc;
+    .linkArrow {
+            color: black;
+        }
+        p {
+            border-right: none;
+        }
 }

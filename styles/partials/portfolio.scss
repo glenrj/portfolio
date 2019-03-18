@@ -1,25 +1,28 @@
 .portfolio {
-    // Photo by Paul Gilmore on Unsplash
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3)), url(../assets/portfolioBackground.jpg);
-    // background: url(../assets/portfolioBackground.jpg);
+    // Photo by David von Diemar on Unsplash
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/portfolioBackground.jpg);
     background-size: cover;
     .item {
         display: flex;
         flex-wrap: wrap;
+        // min-height: 500px;
         // border: 1px solid cyan;
-        max-height: 500px;
     }
     
     .info, .siteImage {
         width: 50%;
-        min-width: 200px;
+        min-width: 300px;
+        max-height: 500px;
+        overflow: hidden;
     }
     .info {
-        padding: 10%;
+        padding: 5% 10%;
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .siteImage {
-        overflow-y: scroll;
-        max-height: 500PX;
+    .scroll {
+        // overflow-y: scroll;
     }
     .description {
         color: white;
