@@ -35,9 +35,15 @@
     <!-- Sass Icon -->
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <!-- custom scrollbars -->
-        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+    <!-- Git icon -->
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- custom scrollbars -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+    <!-- JQuery CDN -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <!-- Title -->
     <title>Glen McCann</title>
 </head>
 
@@ -45,7 +51,12 @@
     <header>
         <nav>
             <!-- hamburger menu -->
-            <i class="fas fa-bars"></i>
+            <ul class="nav hide">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars hamburger"></i>
         </nav>
         <div class="content">
             <div class="headshot">
@@ -56,15 +67,17 @@
                 <h1>Web Developer</h1>
                 <div class="headerLine"></div>
                 <p class="about">
-                    I'm a Toronto-based web-developer something something. I have a backround in audio and a passion for
-                    creative troubleshooting. I'm looking forward to my next coding opportunity!
+                    I'm a Toronto-based web developer with a backround in live audio and a passion for
+                    creative troubleshooting. I'm allergic to piña coladas, but I do love getting caught in the rain. A
+                    recent HackerYou graduate, I am excited to have found a creative and fulfilling field in coding and
+                    can't wait for my next opportunity!
                 </p>
             </div>
         </div>
         <div class="sectionLine"></div>
     </header>
     <main>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="content">
                 <h2>Skills</h2>
                 <div class="skillIcons">
@@ -101,17 +114,23 @@
                     <div class="skill">
                         <?xml version="1.0" encoding="iso-8859-1"?>
                         <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
-                            y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="48px"
-                            height="48px">
-                            <path style="fill:#cccc;" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z" />
-                            <path style="fill:#cccc;" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z" />
-                            <polygon style="fill:cccc;" points="8.008,36.986 8.208,36.829 25.737,22.488 20.793,13.012 " />
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;"
+                            xml:space="preserve" width="48px" height="48px">
+                            <path style="fill:#cccc;"
+                                d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z" />
+                            <path style="fill:#cccc;"
+                                d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z" />
+                            <polygon style="fill:cccc;"
+                                points="8.008,36.986 8.208,36.829 25.737,22.488 20.793,13.012 " />
                             <path style="fill:#cccc;"
                                 d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743  c-0.609,0.342-1.352,0.342-1.961,0L8,37z" />
-                                <p>Firebase</p>
+                            <p>Firebase</p>
                         </svg>
-
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-git-plain"></i>
+                        <p>Git</p>
                     </div>
                     <!-- github -->
                     <div class="skill">
@@ -121,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="item">
                 <!-- beachstays -->
                 <div class="info">
@@ -201,7 +220,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="siteImage">
+                <div class="siteImage scroll">
                     <img src="./assets/story.png" alt="Preview image of a story site built on community contributions.">
                 </div>
             </div>
@@ -214,7 +233,10 @@
                     <h2>To Doom List</h2>
                     <h3>HTML5 / CSS3 / React / Firebase</h3>
                     <p class="description">An interactive doomsday planner. Choose a bunker and leave notes for your
-                        friends as you prep for the coming apocalypse. Made in collaboration with <a href="https://alexandershin.ca/">Alexander Shin</a>, <a href="http://ahuoizabaiye.com/">Oiza Baiye</a>, and <a href="http://zoeconnolly.com/">Zoe Connolly</a></p>
+                        friends as you prep for the coming apocalypse. Made in collaboration with <a
+                            href="http://ahuoizabaiye.com/">Ahuoiza Baiye</a>, <a
+                            href="https://alexandershin.ca/">Alexander Shin</a>, and <a
+                            href="http://zoeconnolly.com/">Zoe Connolly</a></p>
                     <a href="https://glenrj.github.io/doomsday-clone/" target="_blank">
                         <div class="link">
                             <p>View Live</p>
@@ -235,7 +257,7 @@
             </div>
             <div class="portfolioLine"></div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="content">
                 <h2>Drop A Line</h2>
                 <div class="contactLinks">
@@ -243,7 +265,8 @@
                         <li><a href="https://twitter.com/glenmccann"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://github.com/glenrjl"><i class="fab fa-github"></i></a></li>
                         <li class="email">glenmccann2@gmail.com</li>
-                        <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="https://www.instagram.com/glen_mccann/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
@@ -271,13 +294,8 @@
         </section>
     </main>
     <footer>
-        <div class="content">
-            <div class="lowerFooter">
-                <div class="footerLine"></div>
-                <!-- <p>&copy; Glen McCann</p> -->
-            </div>
-        </div>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

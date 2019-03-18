@@ -171,7 +171,7 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-  color: coral; }
+  color: #d86034; }
 
 .sectionLine {
   background: black;
@@ -240,10 +240,10 @@ button {
     border: 1px solid black; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/headerBackground.jpg);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/headerBackground.jpg);
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/headerBackground.jpg);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/headerBackground.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/headerBackground.jpg);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
   height: 65vh;
   background-size: cover;
   position: relative;
@@ -261,13 +261,22 @@ header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   header .text {
-    width: 45; }
+    width: 55%; }
+  header i {
+    font-size: 1.3rem;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    header i:hover {
+      color: #cccc; }
 
 .headshot {
-  width: 100%;
-  padding-right: 10%; }
+  width: 45%;
+  padding-right: 5%; }
   .headshot img {
     width: 100%;
     display: inline-block; }
@@ -276,7 +285,34 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px; }
+  padding: 1% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem; }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    margin-right: 10px; }
+    nav ul li {
+      padding: 0px 10px; }
+    nav ul a {
+      color: black;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      nav ul a:hover {
+        color: #d86034; }
+
+.hide {
+  opacity: 0; }
 
 .headerLine {
   background: black;
@@ -353,7 +389,7 @@ p.about {
       text-decoration: none;
       color: darkgray; }
       .portfolio .description a:hover {
-        color: coral;
+        color: #d86034;
         text-decoration: underline; }
 
 .portfolioLine {
