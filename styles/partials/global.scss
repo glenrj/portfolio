@@ -1,3 +1,8 @@
+// VARIABLES
+// accent
+$accent: #cccc;
+
+
 html {
     font-size: 125%;
 }
@@ -21,7 +26,7 @@ h2 {
     text-transform: uppercase;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
-    color: white;
+    color: black;
 }
 
 h3 {
@@ -35,9 +40,9 @@ h3 {
 .sectionLine {
     background: black;
     width: 1px;
-    height: 75px;
+    height: 100px;
     position: absolute;
-    top: 92.5%;
+    top: 90%;
 }
 
 img {

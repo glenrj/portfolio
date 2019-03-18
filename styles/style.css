@@ -152,7 +152,7 @@ h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
-  color: white; }
+  color: black; }
 
 h3 {
   font-family: 'Open Sans', sans-serif;
@@ -163,9 +163,9 @@ h3 {
 .sectionLine {
   background: black;
   width: 1px;
-  height: 75px;
+  height: 100px;
   position: absolute;
-  top: 92.5%; }
+  top: 90%; }
 
 img {
   width: 100%; }
@@ -267,8 +267,7 @@ p.about {
 .skills {
   padding: 5% 0; }
   .skills h2 {
-    text-align: center;
-    color: black; }
+    text-align: center; }
   .skills .skillIcons {
     margin-top: 50px;
     display: -webkit-box;
@@ -290,7 +289,10 @@ p.about {
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/portfolioBackground.jpg);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/portfolioBackground.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/portfolioBackground.jpg);
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  .portfolio h2 {
+    color: white; }
   .portfolio .item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -311,8 +313,60 @@ p.about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .portfolio .scroll {
+    overflow-y: scroll; }
   .portfolio .description {
     color: white;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin-bottom: 25px; }
+
+.portfolioLine {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, black));
+  background: -webkit-linear-gradient(top, white 50%, black 50%);
+  background: -o-linear-gradient(top, white 50%, black 50%);
+  background: linear-gradient(to bottom, white 50%, black 50%);
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  top: 97.5%;
+  left: 50%; }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10%; }
+  .contact h2 {
+    text-align: center; }
+  .contact input[type=text],
+  .contact input[type=textarea] {
+    border: 1px solid #cccc;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem; }
+
+.upperForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  .upperForm input {
+    width: 30%; }
+
+.lowerForm input {
+  width: 100%;
+  height: 200px; }
