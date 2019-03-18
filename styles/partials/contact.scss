@@ -3,16 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 8% 0%;
     h2 {
         text-align: center;
+        margin-bottom: 25px;
     }
     input[type=text],
-    input[type=textarea] {
+    textarea {
         border: 1px solid $accent;
         padding: 10px;
         font-family: 'Montserrat', sans-serif;
         font-size: 0.9rem;
+    }
+    button {
+        margin: 0 auto;
     }
 
 }
@@ -27,8 +31,10 @@
 }
 
 .lowerForm {
-    input {
+    textarea {
         width: 100%;
         height: 200px;
+        resize: none;
     }
+    margin-bottom: 25px;
 }

@@ -54,7 +54,8 @@ a {
     text-decoration: none;
 }
 
-.link {
+.link,
+button {
     display: flex;
     align-items: center;
     border: 1px solid white;
@@ -91,4 +92,17 @@ a:focus .link {
         p {
             border-right: none;
         }
-}
+    }
+
+    button {
+        background: black;
+        padding: 0;
+        p {
+            border-right: none;
+        }
+        &:hover {
+            background: none;
+            color: black;
+            border: 1px solid black;
+        }
+    }

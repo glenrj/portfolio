@@ -221,12 +221,17 @@
                     <div class="upperForm">
                         <input type="text" name="name" placeholder="Name *" required>
                         <input type="text" name="email" placeholder="Email Address *" required>
-                        <input type="textarea" name="subject" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Subject" >
                     </div>
                     <div class="lowerForm">
-                        <input type="text" name="message" placeholder="Message *" required>
+                        <textarea name="message" placeholder="Message *" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit">
+                        <p>Send Message</p>
+                        <div class="linkArrow">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </button>
                 </form>
             </div>
         </section>

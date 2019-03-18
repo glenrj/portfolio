@@ -174,7 +174,8 @@ a {
   display: inline-block;
   text-decoration: none; }
 
-.link {
+.link,
+button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,17 +191,22 @@ a {
   -o-transition: 0.2s;
   transition: 0.2s;
   margin-right: 10px; }
-  .link p {
+  .link p,
+  button p {
     margin: 0;
     padding: 10px;
     border-right: 1px solid white; }
-  .link .linkArrow {
+  .link .linkArrow,
+  button .linkArrow {
     padding: 10px; }
-  .link:hover {
+  .link:hover,
+  button:hover {
     background: #cccc; }
-    .link:hover .linkArrow {
+    .link:hover .linkArrow,
+    button:hover .linkArrow {
       color: black; }
-    .link:hover p {
+    .link:hover p,
+    button:hover p {
       border-right: none; }
 
 a:focus .link {
@@ -209,6 +215,16 @@ a:focus .link {
     color: black; }
   a:focus .link p {
     border-right: none; }
+
+button {
+  background: black;
+  padding: 0; }
+  button p {
+    border-right: none; }
+  button:hover {
+    background: none;
+    color: black;
+    border: 1px solid black; }
 
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../assets/headerBackground.jpg);
@@ -265,7 +281,7 @@ p.about {
   font-weight: 300; }
 
 .skills {
-  padding: 5% 0; }
+  padding: 8% 0; }
   .skills h2 {
     text-align: center; }
   .skills .skillIcons {
@@ -313,8 +329,6 @@ p.about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .portfolio .scroll {
-    overflow-y: scroll; }
   .portfolio .description {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -346,15 +360,18 @@ p.about {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10%; }
+  padding: 8% 0%; }
   .contact h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 25px; }
   .contact input[type=text],
-  .contact input[type=textarea] {
+  .contact textarea {
     border: 1px solid #cccc;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem; }
+  .contact button {
+    margin: 0 auto; }
 
 .upperForm {
   display: -webkit-box;
@@ -367,6 +384,9 @@ p.about {
   .upperForm input {
     width: 30%; }
 
-.lowerForm input {
-  width: 100%;
-  height: 200px; }
+.lowerForm {
+  margin-bottom: 25px; }
+  .lowerForm textarea {
+    width: 100%;
+    height: 200px;
+    resize: none; }
