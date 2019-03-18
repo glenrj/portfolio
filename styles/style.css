@@ -171,7 +171,7 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-  color: #b1b0b0; }
+  color: coral; }
 
 .sectionLine {
   background: black;
@@ -342,11 +342,19 @@ p.about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .portfolio .scroll {
+    overflow-y: scroll; }
   .portfolio .description {
     color: white;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin-bottom: 25px; }
+    .portfolio .description a {
+      text-decoration: none;
+      color: darkgray; }
+      .portfolio .description a:hover {
+        color: coral;
+        text-decoration: underline; }
 
 .portfolioLine {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, black));
@@ -374,10 +382,11 @@ p.about {
   -ms-flex-align: center;
   align-items: center;
   padding: 8% 0%;
-  padding-bottom: 5%; }
+  padding-bottom: 0%; }
   .contact h2 {
     text-align: center;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    font-size: 1.3rem; }
   .contact input[type=text],
   .contact textarea {
     border: 1px solid #cccc;
@@ -411,22 +420,15 @@ p.about {
     height: 200px;
     resize: none; }
 
-footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../assets/footerBackground.jpg);
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
-  background-size: cover;
-  background-position: 50% 70%;
-  padding: 3%;
-  color: #cccc;
-  text-align: center; }
-  footer .content {
-    width: 25%;
+.contactLinks {
+  width: 60%;
+  margin: 0 auto; }
+  .contactLinks .email {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding-top: 7px;
     text-align: center; }
-  footer p {
-    font-weight: 300; }
-  footer ul {
+  .contactLinks ul {
     padding: 0;
     list-style: none;
     display: -webkit-box;
@@ -435,11 +437,28 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    font-size: 1.4rem; }
-  footer a {
-    color: #cccc;
+    font-size: 1.4rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .contactLinks a {
+    color: black;
     -webkit-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s; }
-    footer a:hover {
-      color: white; }
+    .contactLinks a:hover {
+      color: #376a42; }
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5))), url(../assets/footerBackground.jpg);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(../assets/footerBackground.jpg);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(../assets/footerBackground.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(../assets/footerBackground.jpg);
+  background-size: cover;
+  background-position: 50% 60%;
+  padding: 8%;
+  color: black;
+  text-align: center; }
+  footer .content {
+    width: 40%;
+    text-align: center; }

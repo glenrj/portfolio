@@ -35,6 +35,9 @@
     <!-- Sass Icon -->
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <!-- custom scrollbars -->
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
     <title>Glen McCann</title>
 </head>
 
@@ -95,6 +98,21 @@
                         <i class="devicon-react-original"></i>
                         <p>React</p>
                     </div>
+                    <div class="skill">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+                            y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="48px"
+                            height="48px">
+                            <path style="fill:#cccc;" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z" />
+                            <path style="fill:#cccc;" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z" />
+                            <polygon style="fill:cccc;" points="8.008,36.986 8.208,36.829 25.737,22.488 20.793,13.012 " />
+                            <path style="fill:#cccc;"
+                                d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743  c-0.609,0.342-1.352,0.342-1.961,0L8,37z" />
+                                <p>Firebase</p>
+                        </svg>
+
+                    </div>
                     <!-- github -->
                     <div class="skill">
                         <i class="devicon-github-plain"></i>
@@ -127,13 +145,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="siteImage beachstays scroll">
+                <div class="siteImage beachstays scroll" data-simplebar data-simplebar-auto-hide="false">
                     <img src="./assets/beachstays.png" alt="Preview image of a beach-themed travel site.">
                 </div>
             </div>
             <!-- tournament -->
             <div class="item">
-                <div class="siteImage scroll">
+                <div class="siteImage scroll" data-simplebar data-simplebar-auto-hide="false">
                     <img src="./assets/tournament.png" alt="Preview image of a round-robin tournament site.">
                 </div>
                 <div class="info">
@@ -189,14 +207,14 @@
             </div>
             <!-- doomsday -->
             <div class="item">
-                <div class="siteImage scroll">
+                <div class="siteImage scroll" data-simplebar data-simplebar-auto-hide="false">
                     <img src="./assets/doom.png" alt="Preview image of a story site built on community contributions.">
                 </div>
                 <div class="info">
                     <h2>To Doom List</h2>
                     <h3>HTML5 / CSS3 / React / Firebase</h3>
                     <p class="description">An interactive doomsday planner. Choose a bunker and leave notes for your
-                        friends as you prep for the coming apocalypse.</p>
+                        friends as you prep for the coming apocalypse. Made in collaboration with <a href="https://alexandershin.ca/">Alexander Shin</a>, <a href="http://ahuoizabaiye.com/">Oiza Baiye</a>, and <a href="http://zoeconnolly.com/">Zoe Connolly</a></p>
                     <a href="https://glenrj.github.io/doomsday-clone/" target="_blank">
                         <div class="link">
                             <p>View Live</p>
@@ -220,6 +238,15 @@
         <section class="contact">
             <div class="content">
                 <h2>Drop A Line</h2>
+                <div class="contactLinks">
+                    <ul>
+                        <li><a href="https://twitter.com/glenmccann"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/glenrjl"><i class="fab fa-github"></i></a></li>
+                        <li class="email">glenmccann2@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/glen_mccann/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
                 <form action="https://formspree.io/glenmccann2@gmail.com" method="POST">
                     <div class="upperForm">
                         <label for="name" class="visuallyhidden">Name:</label>
@@ -245,16 +272,6 @@
     </main>
     <footer>
         <div class="content">
-            <div class="upperFooter">
-                <ul>
-                    <li><a href="https://twitter.com/glenmccann"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/glenrjl"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i
-                        class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://www.instagram.com/glen_mccann/"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                    <p>glenmccann2@gmail.com</p>
-                </div>
             <div class="lowerFooter">
                 <div class="footerLine"></div>
                 <!-- <p>&copy; Glen McCann</p> -->

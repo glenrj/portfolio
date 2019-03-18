@@ -4,10 +4,11 @@
     justify-content: center;
     align-items: center;
     padding: 8% 0%;
-    padding-bottom: 5%;
+    padding-bottom: 0%;
     h2 {
         text-align: center;
         margin-bottom: 25px;
+        font-size: 1.3rem;
     }
     input[type=text],
     textarea {
@@ -42,4 +43,31 @@
         resize: none;
     }
     margin-bottom: 25px;
+    
+}
+
+.contactLinks {
+    width: 60%;
+    margin: 0 auto;
+    .email {
+        font-weight: 300;
+        font-size: 0.9rem;
+        padding-top: 7px;
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        align-items: flex-start;
+    }
+    a {
+        color: black;
+        transition: 0.1s;
+        &:hover {
+            color: #376a42;
+        }
+    }
 }
