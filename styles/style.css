@@ -132,6 +132,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
 html {
   font-size: 125%; }
 
@@ -360,7 +373,8 @@ p.about {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8% 0%; }
+  padding: 8% 0%;
+  padding-bottom: 5%; }
   .contact h2 {
     text-align: center;
     margin-bottom: 25px; }
@@ -369,7 +383,13 @@ p.about {
     border: 1px solid #cccc;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .contact input[type=text]:focus,
+    .contact textarea:focus {
+      border: 1px solid #0c1e13; }
   .contact button {
     margin: 0 auto; }
 
@@ -390,3 +410,36 @@ p.about {
     width: 100%;
     height: 200px;
     resize: none; }
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../assets/footerBackground.jpg);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/footerBackground.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  padding: 3%;
+  color: #cccc;
+  text-align: center; }
+  footer .content {
+    width: 25%;
+    text-align: center; }
+  footer p {
+    font-weight: 300; }
+  footer ul {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 1.4rem; }
+  footer a {
+    color: #cccc;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
+    footer a:hover {
+      color: white; }

@@ -1,0 +1,30 @@
+footer {
+    // Photo by Yann Allegre on Unsplash
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0,0,0, 0.1)), url(../assets/footerBackground.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    padding: 3%;
+    color: $accent;
+    text-align: center;
+    .content {
+        width: 25%;
+        text-align: center;
+    }
+    p {
+        font-weight: 300;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+    a {
+        color: $accent;
+        transition: 0.1s;
+        &:hover {
+            color: white;
+        }
+    }
+}

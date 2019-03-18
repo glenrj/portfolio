@@ -126,10 +126,10 @@
                             </div>
                         </div>
                     </a>
-            </div>
-            <div class="siteImage beachstays scroll">
-                <img src="./assets/beachstays.png" alt="Preview image of a beach-themed travel site.">
-            </div>
+                </div>
+                <div class="siteImage beachstays scroll">
+                    <img src="./assets/beachstays.png" alt="Preview image of a beach-themed travel site.">
+                </div>
             </div>
             <!-- tournament -->
             <div class="item">
@@ -139,7 +139,9 @@
                 <div class="info">
                     <h2>Tournament App</h2>
                     <h3>HTML5 / CSS3 / Sass / JavaScript / JQuery</h3>
-                    <p class="description">A tool to keep track of a round-robin tournament, whether that be a family games night or a more competitive setting. Fill in you friends' names and find a champion among you!</p>
+                    <p class="description">A tool to keep track of a round-robin tournament, whether that be a family
+                        games night or a more competitive setting. Fill in you friends' names and find a champion among
+                        you!</p>
                     <a href="https://glenrj.github.io/glen-mccann-project3/" target="_blank">
                         <div class="link">
                             <p>View Live</p>
@@ -163,23 +165,23 @@
                 <div class="info">
                     <h2>Your Story</h2>
                     <h3>HTML5 / CSS3 / React / Firebase</h3>
-                    <p class="description">A community-driven story, that everyone can add to a few lines at a time.</p>
-                        <a href="https://glenrj.github.io/glenMccannProject05/" target="_blank">
-                            <div class="link">
-                                <p>View Live</p>
-                                <div class="linkArrow">
-                                    <i class="fas fa-angle-right"></i>
-                                </div>
+                    <p class="description">A community-driven story that anyone can add to a few lines at a time.</p>
+                    <a href="https://glenrj.github.io/glenMccannProject05/" target="_blank">
+                        <div class="link">
+                            <p>View Live</p>
+                            <div class="linkArrow">
+                                <i class="fas fa-angle-right"></i>
                             </div>
-                        </a>
-                        <a href="https://github.com/glenrj/glenMccannProject05" target="_blank">
-                            <div class="link">
-                                <p>View on GitHub</p>
-                                <div class="linkArrow">
-                                    <i class="fas fa-angle-right"></i>
-                                </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/glenrj/glenMccannProject05" target="_blank">
+                        <div class="link">
+                            <p>View on GitHub</p>
+                            <div class="linkArrow">
+                                <i class="fas fa-angle-right"></i>
                             </div>
-                        </a>
+                        </div>
+                    </a>
                 </div>
                 <div class="siteImage">
                     <img src="./assets/story.png" alt="Preview image of a story site built on community contributions.">
@@ -193,7 +195,8 @@
                 <div class="info">
                     <h2>To Doom List</h2>
                     <h3>HTML5 / CSS3 / React / Firebase</h3>
-                    <p class="description">An interactive doomsday planner. Choose a bunker and leave notes for your friends as you prep for the coming apocalypse.</p>
+                    <p class="description">An interactive doomsday planner. Choose a bunker and leave notes for your
+                        friends as you prep for the coming apocalypse.</p>
                     <a href="https://glenrj.github.io/doomsday-clone/" target="_blank">
                         <div class="link">
                             <p>View Live</p>
@@ -219,12 +222,16 @@
                 <h2>Drop A Line</h2>
                 <form action="https://formspree.io/glenmccann2@gmail.com" method="POST">
                     <div class="upperForm">
-                        <input type="text" name="name" placeholder="Name *" required>
-                        <input type="text" name="email" placeholder="Email Address *" required>
-                        <input type="text" name="subject" placeholder="Subject" >
+                        <label for="name" class="visuallyhidden">Name:</label>
+                        <input type="text" name="name" placeholder="Name *" id="name" required>
+                        <label for="email" class="visuallyhidden">Email:</label>
+                        <input type="text" name="email" placeholder="Email Address *" id="email" required>
+                        <label for="subject" class="visuallyhidden">Subject:</label>
+                        <input type="text" name="subject" placeholder="Subject" id="subject">
                     </div>
                     <div class="lowerForm">
-                        <textarea name="message" placeholder="Message *" required></textarea>
+                        <label for="message" class="visuallyhidden">Message:</label>
+                        <textarea name="message" placeholder="Message *" id="message" required></textarea>
                     </div>
                     <button type="submit">
                         <p>Send Message</p>
@@ -239,20 +246,18 @@
     <footer>
         <div class="content">
             <div class="upperFooter">
-                <h3>Contact</h3>
                 <ul>
-                    <li>glenmccann2@gmail.com</li>
-                    <div class="contactIcons">
-                        <li><a href="https://twitter.com/glenmccann"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/glenrjl"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                    </div>
-                </ul>
-            </div>
+                    <li><a href="https://twitter.com/glenmccann"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/glenrjl"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/glen_mccann/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <p>glenmccann2@gmail.com</p>
+                </div>
             <div class="lowerFooter">
                 <div class="footerLine"></div>
-                <p>&copy; Glen McCann</p>
+                <!-- <p>&copy; Glen McCann</p> -->
             </div>
         </div>
     </footer>
