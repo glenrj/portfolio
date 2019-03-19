@@ -233,11 +233,11 @@ a:focus .link {
 
 button {
   background: black;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid black; }
   button:hover {
     background: none;
-    color: black;
-    border: 1px solid black; }
+    color: black; }
   button p {
     border-right: none; }
 
@@ -479,8 +479,7 @@ p.about {
   margin-bottom: 25px; }
   .lowerForm textarea {
     width: 100%;
-    height: 200px;
-    resize: none; }
+    height: 200px; }
 
 .contactLinks {
   width: 40%;
@@ -592,6 +591,8 @@ footer {
       margin-bottom: 10px; } }
 
 @media (max-width: 800px) {
+  .skills .content {
+    width: 80%; }
   .skills .skillIcons {
     -webkit-box-pack: center;
     -ms-flex-pack: center;

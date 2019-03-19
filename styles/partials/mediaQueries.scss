@@ -114,6 +114,9 @@
 @media (max-width: 800px) {
     // skills section
     .skills {
+        .content {
+            width: 80%;
+        }
         .skillIcons {
             justify-content: center;
         }
