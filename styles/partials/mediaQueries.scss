@@ -1,4 +1,12 @@
 @media (max-width: 1050px) {
+    header {
+        .content {
+            padding: 10% 0%;
+        }
+    }
+    .sectionLine {
+        top: 92%;
+    }
     .skills {
         .content {
             width: 75%;
@@ -14,6 +22,7 @@
 
 @media (max-width: 1000px) {
     .portfolio {
+        padding-bottom: 50px;
         .item {
             flex-direction: column;
             padding: 50px 0px;
@@ -27,7 +36,7 @@
             
             .siteImage {
                 min-height: 300px;
-                box-shadow: 10px 10px 0px $accent;
+                box-shadow: -10px -10px 0px $accent;
             }
         }
         .reverse {
@@ -51,7 +60,7 @@
             width: 90%;
             justify-content: center;
             align-items: center;
-            padding: 10% 0;
+            padding: 15% 0;
             .headshot {
                 margin: 25px 0;
                 width: 55%;
@@ -59,19 +68,19 @@
         }
     }
     .sectionLine {
-        top: 94.5%;
+        top: 95.5%;
     }
     .portfolio {
         .info,
         .siteImage {
-            width: 90%;
+            width: 80%;
         }
     }
     
     .contact {
-        .contactLinks {
-            width: 100%;
-        }
+        // .contactLinks {
+        //     width: 80%;
+        // }
         .upperForm {
             flex-direction: column;
             input {
@@ -102,12 +111,20 @@
     }
     .sectionLine {
         height: 75px;
-        top: 96%;
     }
 
     .contact {
         .content {
             width: 90%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio {
+        .siteImage {
+            min-height: 100px;
+            max-height: 400px;
         }
     }
 }

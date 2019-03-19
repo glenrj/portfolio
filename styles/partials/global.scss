@@ -6,6 +6,7 @@ $accent: rgb(216, 96, 52);
 
 html {
     font-size: 125%;
+    scroll-behavior: smooth;
 }
 
 .content { 
@@ -75,18 +76,18 @@ button {
         padding: 10px;
     }
     &:hover {
-        background: #cccc;
+        background: $primary;
         .linkArrow {
             color: black;
         }
         p {
-            border-right: none;
+            border-right: 1px solid rgba(204,204,204, 00);
         }
     }
 }
 
 a:focus .link {
-    background: #cccc;
+    background: $primary;
     .linkArrow {
             color: black;
         }

@@ -146,7 +146,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 html {
-  font-size: 125%; }
+  font-size: 125%;
+  scroll-behavior: smooth; }
 
 .content {
   width: 60%;
@@ -221,7 +222,7 @@ button {
       color: black; }
     .link:hover p,
     button:hover p {
-      border-right: none; }
+      border-right: 1px solid rgba(204, 204, 204, 0); }
 
 a:focus .link {
   background: #cccc; }
@@ -266,7 +267,7 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   header .text {
-    width: 55%; }
+    width: 50%; }
   header i {
     font-size: 1.4rem;
     -webkit-transition: 0.2s;
@@ -291,6 +292,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   font-size: 1rem; }
   nav ul {
     display: -webkit-box;
@@ -311,11 +313,19 @@ nav {
       transition: 0.2s; }
       nav ul a:hover {
         color: #d86034; }
+      nav ul a:focus {
+        color: #d86034; }
+
+.navButton {
+  border: none;
+  background: none;
+  color: black; }
+  .navButton:focus, .navButton:hover {
+    border: none;
+    color: #d86034; }
 
 .hide {
-  opacity: 0; }
-  .hide:focus {
-    opacity: 100%; }
+  display: none; }
 
 .headerLine {
   background: black;
@@ -381,8 +391,7 @@ p.about {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .portfolio .info, .portfolio .siteImage {
-    width: 50%;
-    overflow: hidden; }
+    width: 50%; }
   .portfolio .siteImage {
     max-height: 500px; }
   .portfolio .info {
@@ -405,7 +414,7 @@ p.about {
     .portfolio .description a {
       text-decoration: none;
       color: darkgray; }
-      .portfolio .description a:hover {
+      .portfolio .description a:hover, .portfolio .description a:focus {
         color: #d86034;
         text-decoration: underline; }
 
@@ -445,7 +454,7 @@ p.about {
     border: 1px solid #cccc;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
@@ -517,32 +526,38 @@ footer {
     text-align: center; }
 
 @media (max-width: 1050px) {
+  header .content {
+    padding: 10% 0%; }
+  .sectionLine {
+    top: 92%; }
   .skills .content {
     width: 75%; }
   .portfolio .info {
     padding: 1% 10%; } }
 
 @media (max-width: 1000px) {
-  .portfolio .item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 50px 0px; }
-    .portfolio .item .info {
+  .portfolio {
+    padding-bottom: 50px; }
+    .portfolio .item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
       padding: 50px 0px; }
-    .portfolio .item .info,
-    .portfolio .item .siteImage {
-      margin: 0 auto; }
-    .portfolio .item .siteImage {
-      min-height: 300px;
-      -webkit-box-shadow: 10px 10px 0px #d86034;
-      box-shadow: 10px 10px 0px #d86034; }
-  .portfolio .reverse {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
+      .portfolio .item .info {
+        padding: 50px 0px; }
+      .portfolio .item .info,
+      .portfolio .item .siteImage {
+        margin: 0 auto; }
+      .portfolio .item .siteImage {
+        min-height: 300px;
+        -webkit-box-shadow: -10px -10px 0px #d86034;
+        box-shadow: -10px -10px 0px #d86034; }
+    .portfolio .reverse {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
   .portfolioLine {
     height: 75px;
     top: 99%; }
@@ -562,17 +577,15 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 10% 0; }
+    padding: 15% 0; }
     header .content .headshot {
       margin: 25px 0;
       width: 55%; }
   .sectionLine {
-    top: 94.5%; }
+    top: 95.5%; }
   .portfolio .info,
   .portfolio .siteImage {
-    width: 90%; }
-  .contact .contactLinks {
-    width: 100%; }
+    width: 80%; }
   .contact .upperForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -594,7 +607,11 @@ footer {
   header .text {
     width: 80%; }
   .sectionLine {
-    height: 75px;
-    top: 96%; }
+    height: 75px; }
   .contact .content {
     width: 90%; } }
+
+@media (max-width: 450px) {
+  .portfolio .siteImage {
+    min-height: 100px;
+    max-height: 400px; } }

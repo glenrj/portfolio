@@ -1,10 +1,14 @@
 // nav
-$(".hamburger").on("click", function() {
+$(".navButton").on("click", function() {
         if ($('.nav').hasClass('hide')) {
-            $('.nav').fadeIn(500);
             $('.nav').removeClass('hide')
         } else {
-            $('.nav').fadeOut();
             $('.nav').addClass('hide');
         }
     });
+
+// $(window).resize(function () {
+//     If($(window).width() < 1000){
+//         $('.').removeClass('fade');
+//     }
+// });

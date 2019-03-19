@@ -13,7 +13,7 @@ header {
         flex-wrap: wrap;
     }
     .text {
-        width: 55%;
+        width: 50%;
     }
     i {
         font-size: 1.4rem;
@@ -40,6 +40,7 @@ nav {
     padding: 1% 1%;
     display: flex;
     font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     ul {
         display: flex;
@@ -56,15 +57,28 @@ nav {
             &:hover {
                 color: $accent;
             }
+            &:focus {
+                color: $accent;
+            }
         }
     }
 }
 
-.hide {
-    opacity: 0;
-    &:focus {
-        opacity: 100%;
+.navButton {
+    border: none;
+    background: none;
+    color: black;
+    &:focus,
+    &:hover {
+        border: none;
+        color: $accent;
     }
+    
+}
+
+.hide {
+    display: none;
+       
 }
 
 .headerLine {

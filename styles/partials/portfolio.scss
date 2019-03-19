@@ -13,7 +13,6 @@
     
     .info, .siteImage {
         width: 50%;
-        overflow: hidden;
     }
     
     .siteImage {
@@ -37,7 +36,8 @@
         a {
             text-decoration: none;
             color: darkgray;
-            &:hover {
+            &:hover,
+            &:focus {
                 color: $accent;
                 text-decoration: underline;
             }
