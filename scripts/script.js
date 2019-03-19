@@ -1,4 +1,5 @@
-// nav
+
+// show/hide hamburger nav
 $(".navButton").on("click", function() {
         if ($('.nav').hasClass('hide')) {
             $('.nav').removeClass('hide')
@@ -6,9 +7,3 @@ $(".navButton").on("click", function() {
             $('.nav').addClass('hide');
         }
     });
-
-// $(window).resize(function () {
-//     If($(window).width() < 1000){
-//         $('.').removeClass('fade');
-//     }
-// });

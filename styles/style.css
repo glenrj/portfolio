@@ -206,14 +206,6 @@ button {
   transition: 0.2s;
   margin-right: 10px;
   margin-bottom: 10px; }
-  .link p,
-  button p {
-    margin: 0;
-    padding: 10px;
-    border-right: 1px solid white; }
-  .link .linkArrow,
-  button .linkArrow {
-    padding: 10px; }
   .link:hover,
   button:hover {
     background: #cccc; }
@@ -223,6 +215,14 @@ button {
     .link:hover p,
     button:hover p {
       border-right: 1px solid rgba(204, 204, 204, 0); }
+  .link p,
+  button p {
+    margin: 0;
+    padding: 10px;
+    border-right: 1px solid white; }
+  .link .linkArrow,
+  button .linkArrow {
+    padding: 10px; }
 
 a:focus .link {
   background: #cccc; }
@@ -234,12 +234,12 @@ a:focus .link {
 button {
   background: black;
   padding: 0; }
-  button p {
-    border-right: none; }
   button:hover {
     background: none;
     color: black;
     border: 1px solid black; }
+  button p {
+    border-right: none; }
 
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/headerBackground.jpg);
@@ -518,12 +518,7 @@ footer {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(../assets/footerBackground.jpg);
   background-size: cover;
   background-position: 50% 60%;
-  padding: 8%;
-  color: black;
-  text-align: center; }
-  footer .content {
-    width: 40%;
-    text-align: center; }
+  padding: 8%; }
 
 @media (max-width: 1050px) {
   header .content {
@@ -550,6 +545,7 @@ footer {
       .portfolio .item .siteImage {
         margin: 0 auto; }
       .portfolio .item .siteImage {
+        overflow: hidden;
         min-height: 300px;
         -webkit-box-shadow: -10px -10px 0px #d86034;
         box-shadow: -10px -10px 0px #d86034; }

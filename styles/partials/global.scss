@@ -38,6 +38,7 @@ h3 {
     color: $accent;
 }
 
+// styled div between some sections
 .sectionLine {
     background: black;
     width: 1px;
@@ -67,14 +68,6 @@ button {
     transition: 0.2s;
     margin-right: 10px;
     margin-bottom: 10px;
-    p {
-        margin: 0;
-        padding: 10px;
-        border-right: 1px solid white;
-    }
-    .linkArrow {
-        padding: 10px;
-    }
     &:hover {
         background: $primary;
         .linkArrow {
@@ -84,13 +77,25 @@ button {
             border-right: 1px solid rgba(204,204,204, 00);
         }
     }
+
+    p {
+        margin: 0;
+        padding: 10px;
+        border-right: 1px solid white;
+    }
+
+    .linkArrow {
+        padding: 10px;
+    }
 }
 
 a:focus .link {
     background: $primary;
+
     .linkArrow {
             color: black;
         }
+
         p {
             border-right: none;
         }
@@ -99,12 +104,13 @@ a:focus .link {
     button {
         background: black;
         padding: 0;
-        p {
-            border-right: none;
-        }
         &:hover {
             background: none;
             color: black;
             border: 1px solid black;
+        }
+
+        p {
+            border-right: none;
         }
     }

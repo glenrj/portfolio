@@ -1,18 +1,24 @@
+// 1050px
 @media (max-width: 1050px) {
+    // header
     header {
         .content {
             padding: 10% 0%;
         }
     }
+
     .sectionLine {
         top: 92%;
     }
+
+    // skills section
     .skills {
         .content {
             width: 75%;
         }
     }
 
+    // portfolio section
     .portfolio {
         .info {
             padding: 1% 10%;
@@ -20,25 +26,32 @@
     }
 }
 
+// 1000px
 @media (max-width: 1000px) {
+    // portfolio section
     .portfolio {
         padding-bottom: 50px;
+
         .item {
             flex-direction: column;
             padding: 50px 0px;
+
             .info {
                 padding: 50px 0px;
             }
+
             .info,
             .siteImage {
                 margin: 0 auto;
             }
             
             .siteImage {
+                overflow: hidden;
                 min-height: 300px;
                 box-shadow: -10px -10px 0px $accent;
             }
         }
+
         .reverse {
             flex-direction: column-reverse;
         }
@@ -48,12 +61,16 @@
         height: 75px;
         top: 99%;
     }
+    
+    // contact section
     .contactLinks {
         width: 80%;
     }
 }
 
+// 900px
 @media (max-width: 900px) {
+    // header
     header {
         .content {
             flex-direction: column;
@@ -61,15 +78,19 @@
             justify-content: center;
             align-items: center;
             padding: 15% 0;
+            
             .headshot {
                 margin: 25px 0;
                 width: 55%;
             }
         }
     }
+
     .sectionLine {
         top: 95.5%;
     }
+
+    // portfolio section 
     .portfolio {
         .info,
         .siteImage {
@@ -77,10 +98,8 @@
         }
     }
     
+    // contact section
     .contact {
-        // .contactLinks {
-        //     width: 80%;
-        // }
         .upperForm {
             flex-direction: column;
             input {
@@ -91,11 +110,14 @@
     }
 }
 
+// 800px
 @media (max-width: 800px) {
+    // skills section
     .skills {
         .skillIcons {
             justify-content: center;
         }
+
         .skill {
             width: 100px;
         }
@@ -103,16 +125,20 @@
     }
 }
 
+// 550px
 @media (max-width: 550px) {
+    // header
     header {
         .text {
             width: 80%;
         }
     }
+
     .sectionLine {
         height: 75px;
     }
 
+    // contact section
     .contact {
         .content {
             width: 90%;
@@ -120,6 +146,7 @@
     }
 }
 
+// 450px
 @media (max-width: 450px) {
     .portfolio {
         .siteImage {

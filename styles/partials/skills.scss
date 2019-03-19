@@ -1,8 +1,12 @@
+// skills section styles
+
 .skills {
     padding: 8% 0;
     h2 {
         text-align: center;
     }
+
+    // icons container
     .skillIcons {
         margin-top: 50px;
         display: flex;
@@ -10,16 +14,20 @@
         justify-content: space-between;
         text-align: center;
     }
+
+    // icons
     .skillIcons i {
         font-size: 50px;
         color: #cccccc;
     }
 
+    // labels
     .skillIcons p {
         font-family: 'Montserrat', sans-serif;
         font-size: 0.8rem;
     }
-
+    
+    // individual icon container
     .skill {
         display: flex;
         align-items: center;

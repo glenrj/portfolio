@@ -7,14 +7,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .content {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     .text {
         width: 50%;
     }
+
     i {
         font-size: 1.4rem;
         transition: 0.2s;
@@ -27,6 +30,7 @@ header {
 .headshot {
     width: 45%;
     padding-right: 5%;
+
     img {
         width: 100%;
         display: inline-block;
@@ -42,15 +46,18 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 1rem;
+
     ul {
         display: flex;
         justify-content: space-between;
         list-style: none;
         margin: 0;
         margin-right: 10px;
+
         li {
             padding: 0px 10px;
         }
+
         a {
             color: black;
             transition: 0.2s;
@@ -64,6 +71,7 @@ nav {
     }
 }
 
+// hamburger menu
 .navButton {
     border: none;
     background: none;
@@ -76,11 +84,12 @@ nav {
     
 }
 
+// nav default state (hidden)
 .hide {
     display: none;
-       
 }
 
+// line underneath h1
 .headerLine {
     background: black;
     width: 50px;
