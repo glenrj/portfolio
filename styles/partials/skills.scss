@@ -6,6 +6,7 @@
     .skillIcons {
         margin-top: 50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         text-align: center;
     }
@@ -17,5 +18,11 @@
     .skillIcons p {
         font-family: 'Montserrat', sans-serif;
         font-size: 0.8rem;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }

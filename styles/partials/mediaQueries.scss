@@ -1,0 +1,113 @@
+@media (max-width: 1050px) {
+    .skills {
+        .content {
+            width: 75%;
+        }
+    }
+
+    .portfolio {
+        .info {
+            padding: 1% 10%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio {
+        .item {
+            flex-direction: column;
+            padding: 50px 0px;
+            .info {
+                padding: 50px 0px;
+            }
+            .info,
+            .siteImage {
+                margin: 0 auto;
+            }
+            
+            .siteImage {
+                min-height: 300px;
+                box-shadow: 10px 10px 0px $accent;
+            }
+        }
+        .reverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .portfolioLine {
+        height: 75px;
+        top: 99%;
+    }
+    .contactLinks {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        .content {
+            flex-direction: column;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            padding: 10% 0;
+            .headshot {
+                margin: 25px 0;
+                width: 55%;
+            }
+        }
+    }
+    .sectionLine {
+        top: 94.5%;
+    }
+    .portfolio {
+        .info,
+        .siteImage {
+            width: 90%;
+        }
+    }
+    
+    .contact {
+        .contactLinks {
+            width: 100%;
+        }
+        .upperForm {
+            flex-direction: column;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .skills {
+        .skillIcons {
+            justify-content: center;
+        }
+        .skill {
+            width: 100px;
+        }
+
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        .text {
+            width: 80%;
+        }
+    }
+    .sectionLine {
+        height: 75px;
+        top: 96%;
+    }
+
+    .contact {
+        .content {
+            width: 90%;
+        }
+    }
+}

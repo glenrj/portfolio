@@ -47,12 +47,12 @@
 }
 
 .contactLinks {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
     .email {
         font-weight: 300;
         font-size: 0.9rem;
-        padding-top: 7px;
+        padding: 5px 0px;
         text-align: center;
     }
     ul {
@@ -66,8 +66,9 @@
     a {
         color: black;
         transition: 0.1s;
-        &:hover {
-            color: #376a42;
+        &:hover,
+        &:focus {
+            color: $accent;
         }
     }
 }

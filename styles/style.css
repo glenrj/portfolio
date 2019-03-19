@@ -158,7 +158,7 @@ h1 {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   margin-top: 0px;
-  margin-bottom: 0; }
+  margin-bottom: 5px; }
 
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -203,7 +203,8 @@ button {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-bottom: 10px; }
   .link p,
   button p {
     margin: 0;
@@ -244,7 +245,7 @@ header {
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
-  height: 65vh;
+  min-height: 65vh;
   background-size: cover;
   position: relative;
   display: -webkit-box;
@@ -267,7 +268,7 @@ header {
   header .text {
     width: 55%; }
   header i {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
@@ -290,7 +291,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Oswald', sans-serif;
-  font-size: 0.9rem; }
+  font-size: 1rem; }
   nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -313,6 +314,8 @@ nav {
 
 .hide {
   opacity: 0; }
+  .hide:focus {
+    opacity: 100%; }
 
 .headerLine {
   background: black;
@@ -338,6 +341,8 @@ p.about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -348,6 +353,17 @@ p.about {
   .skills .skillIcons p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem; }
+  .skills .skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .portfolio {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/portfolioBackground.jpg);
@@ -366,9 +382,9 @@ p.about {
     flex-wrap: wrap; }
   .portfolio .info, .portfolio .siteImage {
     width: 50%;
-    min-width: 300px;
-    max-height: 500px;
     overflow: hidden; }
+  .portfolio .siteImage {
+    max-height: 500px; }
   .portfolio .info {
     padding: 5% 10%;
     -webkit-box-orient: vertical;
@@ -377,7 +393,8 @@ p.about {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 0.9rem; }
   .portfolio .scroll {
     overflow-y: scroll; }
   .portfolio .description {
@@ -457,12 +474,12 @@ p.about {
     resize: none; }
 
 .contactLinks {
-  width: 60%;
+  width: 40%;
   margin: 0 auto; }
   .contactLinks .email {
     font-weight: 300;
     font-size: 0.9rem;
-    padding-top: 7px;
+    padding: 5px 0px;
     text-align: center; }
   .contactLinks ul {
     padding: 0;
@@ -482,8 +499,8 @@ p.about {
     -webkit-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s; }
-    .contactLinks a:hover {
-      color: #376a42; }
+    .contactLinks a:hover, .contactLinks a:focus {
+      color: #d86034; }
 
 footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5))), url(../assets/footerBackground.jpg);
@@ -498,3 +515,86 @@ footer {
   footer .content {
     width: 40%;
     text-align: center; }
+
+@media (max-width: 1050px) {
+  .skills .content {
+    width: 75%; }
+  .portfolio .info {
+    padding: 1% 10%; } }
+
+@media (max-width: 1000px) {
+  .portfolio .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0px; }
+    .portfolio .item .info {
+      padding: 50px 0px; }
+    .portfolio .item .info,
+    .portfolio .item .siteImage {
+      margin: 0 auto; }
+    .portfolio .item .siteImage {
+      min-height: 300px;
+      -webkit-box-shadow: 10px 10px 0px #d86034;
+      box-shadow: 10px 10px 0px #d86034; }
+  .portfolio .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .portfolioLine {
+    height: 75px;
+    top: 99%; }
+  .contactLinks {
+    width: 80%; } }
+
+@media (max-width: 900px) {
+  header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10% 0; }
+    header .content .headshot {
+      margin: 25px 0;
+      width: 55%; }
+  .sectionLine {
+    top: 94.5%; }
+  .portfolio .info,
+  .portfolio .siteImage {
+    width: 90%; }
+  .contact .contactLinks {
+    width: 100%; }
+  .contact .upperForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contact .upperForm input {
+      width: 100%;
+      margin-bottom: 10px; } }
+
+@media (max-width: 800px) {
+  .skills .skillIcons {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .skills .skill {
+    width: 100px; } }
+
+@media (max-width: 550px) {
+  header .text {
+    width: 80%; }
+  .sectionLine {
+    height: 75px;
+    top: 96%; }
+  .contact .content {
+    width: 90%; } }
