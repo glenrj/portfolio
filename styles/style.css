@@ -245,6 +245,9 @@ button {
   button p {
     border-right: none; }
 
+.simplebar-placeholder {
+  width: auto !important; }
+
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../assets/headerBackground.jpg);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../assets/headerBackground.jpg);
