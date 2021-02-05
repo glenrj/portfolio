@@ -368,6 +368,9 @@ p.about {
   .skills .skillIcons i {
     font-size: 50px;
     color: #cccccc; }
+  .skills .skillIcons svg {
+    width: 50px;
+    height: 50px; }
   .skills .skillIcons p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem; }
