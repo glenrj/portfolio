@@ -150,12 +150,12 @@ html {
   scroll-behavior: smooth; }
 
 .wrapper {
-  max-width: 1800px;
   margin: 0 auto; }
 
 .content {
   width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 2160px; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -183,7 +183,7 @@ h3 {
   width: 1px;
   height: 100px;
   position: absolute;
-  top: 90%; }
+  top: 94%; }
 
 img {
   width: 100%; }
