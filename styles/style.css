@@ -150,12 +150,12 @@ html {
   scroll-behavior: smooth; }
 
 .wrapper {
-  max-width: 1800px;
   margin: 0 auto; }
 
 .content {
   width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 2160px; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -183,7 +183,7 @@ h3 {
   width: 1px;
   height: 100px;
   position: absolute;
-  top: 90%; }
+  top: 94%; }
 
 img {
   width: 100%; }
@@ -368,6 +368,9 @@ p.about {
   .skills .skillIcons i {
     font-size: 50px;
     color: #cccccc; }
+  .skills .skillIcons svg {
+    width: 50px;
+    height: 50px; }
   .skills .skillIcons p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem; }
