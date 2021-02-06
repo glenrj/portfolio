@@ -17,6 +17,9 @@ html {
     width: 60%;
     margin: 0 auto;
     max-width: 2160px;
+    .portfolio & {
+        width: 100%;
+    }
 }
 
 h1 {

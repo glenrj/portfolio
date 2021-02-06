@@ -156,6 +156,8 @@ html {
   width: 60%;
   margin: 0 auto;
   max-width: 2160px; }
+  .portfolio .content {
+    width: 100%; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
