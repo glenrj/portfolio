@@ -17,6 +17,9 @@
         .info {
             padding: 1% 10%;
         }
+        .siteImage {
+            width: calc(50% - 80px);
+        }
     }
 }
 
@@ -53,7 +56,7 @@
 
     .portfolioLine {
         height: 75px;
-        top: 99%;
+        bottom: -37.5px;
     }
     
     // contact section
