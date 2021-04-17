@@ -156,6 +156,8 @@ html {
   width: 60%;
   margin: 0 auto;
   max-width: 2160px; }
+  .portfolio .content {
+    width: 100%; }
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -400,11 +402,26 @@ p.about {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .portfolio .info, .portfolio .siteImage {
+    flex-wrap: wrap;
+    padding-top: 80px; }
+    .portfolio .item:last-of-type {
+      padding-bottom: 80px; }
+  .portfolio .info {
     width: 50%; }
   .portfolio .siteImage {
-    max-height: 500px; }
+    max-height: 600px;
+    -webkit-box-shadow: -20px -20px 0px #d86034;
+    box-shadow: -20px -20px 0px #d86034;
+    width: calc(35% - 80px);
+    margin: 0 auto; }
+    .portfolio .siteImage:nth-of-type(2) {
+      -webkit-box-shadow: 20px 20px 0px #d86034;
+      box-shadow: 20px 20px 0px #d86034; }
+    .portfolio .siteImage.beachstays img,
+    .portfolio .siteImage.your-story img {
+      -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+      transform: translateY(4px); }
   .portfolio .info {
     padding: 5% 10%;
     -webkit-box-orient: vertical;
@@ -437,7 +454,7 @@ p.about {
   width: 1px;
   height: 100px;
   position: absolute;
-  top: 97.5%;
+  bottom: -50px;
   left: 50%; }
 
 .contact {
@@ -530,13 +547,31 @@ footer {
   background-position: 50% 60%;
   padding: 8%; }
 
+@media (max-width: 1400px) {
+  .portfolio .siteImage {
+    max-height: 400px; } }
+
+@media (max-width: 1300px) {
+  .portfolio .siteImage {
+    max-height: 300px;
+    margin-top: 100px; } }
+
 @media (max-width: 1050px) {
   .sectionLine {
     top: 92%; }
   .skills .content {
     width: 75%; }
   .portfolio .info {
-    padding: 1% 10%; } }
+    padding: 1% 10%; }
+  .portfolio .siteImage {
+    width: calc(50% - 80px);
+    max-height: 600px;
+    margin-top: 0; }
+    .portfolio .siteImage.beachstays img,
+    .portfolio .siteImage.your-story img {
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px); } }
 
 @media (max-width: 1000px) {
   .portfolio {
@@ -564,7 +599,7 @@ footer {
       flex-direction: column-reverse; }
   .portfolioLine {
     height: 75px;
-    top: 99%; }
+    bottom: -37.5px; }
   .contactLinks {
     width: 80%; } }
 
