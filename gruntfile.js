@@ -39,6 +39,12 @@ module.exports = function(grunt) {
                 expand: true,
                 src: './src/assets/*',
                 dest: './build/assets/'
+            },
+            scripts: {
+                flatten: true,
+                expand: true,
+                src: './src/scripts/*',
+                dest: './build/scripts/'
             }
         }
     });
@@ -46,5 +52,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default',['watch']);
-    grunt.registerTask('build', ['sass', 'copy:html', 'copy:css', 'copy:images']);
+    grunt.registerTask('build', ['sass', 'copy:html', 'copy:css', 'copy:images', 'copy:scripts']);
 }
