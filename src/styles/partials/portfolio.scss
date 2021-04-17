@@ -11,14 +11,28 @@
     .item {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 80px;
+        &:last-of-type {
+            padding-bottom: 80px;
+        }
     }
     
-    .info, .siteImage {
+    .info {
         width: 50%;
     }
     
     .siteImage {
-        max-height: 500px;
+        max-height: 600px;
+        box-shadow: -20px -20px 0px $accent;
+        width: calc(35% - 80px);
+        margin: 0 auto;
+        &:nth-of-type(2) {
+            box-shadow: 20px 20px 0px $accent;
+        }
+        &.beachstays img,
+        &.your-story img {
+            transform: translateY(4px);
+        }
     }
 
     .info {
@@ -56,6 +70,6 @@
     width: 1px;
     height: 100px;
     position: absolute;
-    top: 97.5%;
+    bottom: -50px;
     left: 50%;
 }

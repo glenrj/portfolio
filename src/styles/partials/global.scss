@@ -10,13 +10,16 @@ html {
 }
 
 .wrapper {
-    max-width: 1800px;
     margin: 0 auto;
 }
 
 .content { 
     width: 60%;
     margin: 0 auto;
+    max-width: 2160px;
+    .portfolio & {
+        width: 100%;
+    }
 }
 
 h1 {
@@ -49,7 +52,7 @@ h3 {
     width: 1px;
     height: 100px;
     position: absolute;
-    top: 90%;
+    top: 94%;
 }
 
 img {
