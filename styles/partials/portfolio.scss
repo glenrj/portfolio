@@ -29,6 +29,10 @@
         &:nth-of-type(2) {
             box-shadow: 20px 20px 0px $accent;
         }
+        &.beachstays img,
+        &.your-story img {
+            transform: translateY(4px);
+        }
     }
 
     .info {
