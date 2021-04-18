@@ -36,7 +36,7 @@ section.pokemon-game {
     .image {
         padding: 60px;
         padding-bottom: 20px;
-        &.hidden {
+        img.hidden {
             filter: contrast(0%) brightness(0%)
         }
     }

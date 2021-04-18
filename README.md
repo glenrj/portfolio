@@ -2,6 +2,8 @@
 Personal and professional portfolio site.
 
 ## Setup
+Node version 10.13.0
+
 ```bash
 npm install
 ```
