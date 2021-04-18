@@ -1,9 +1,7 @@
 # Portfolio
-
 Personal and professional portfolio site.
 
 ## Setup
-
 ```bash
 npm install
 ```

@@ -24,6 +24,8 @@
         <nav>
             <!-- hamburger menu -->
             <ul class="nav hide">
+                <li><a href="#pokemon-game">Pok&#233;mon</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="index.html">Work</a></li>
             </ul>
             <!-- menu icon -->
@@ -48,22 +50,46 @@
         <div class="sectionLine"></div>
     </header>
     <main class="wrapper">
-<section class="contact" id="contact">
-    <div class="content">
-        <h2>Thanks for Stopping By</h2>
-        <!-- links/info -->
-        <div class="contactLinks">
-            <ul>
-                <li><a href="https://twitter.com/glenmccann" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/glenrj" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/glenrj_photomode/" target="_blank"><i
-                            class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+        <!-- POKÉMON GAME SECTION -->
+        <section class="pokemon-game" id="pokemon-game">
+            <div class="content">
+                <!-- left column - pokemon image -->
+                <div class="column">
+                    <div class="image hidden">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png" alt="">
+                    </div>
+                    <h3 class="name">Umbreon</h3>
+                </div>
+                <!-- right column - description and game -->
+                <div class="column">
+                    <h2>Who's That Pokémon?</h2>
+                    <h3>Can you guess the pokémon based on it's silhouette?</h3>
+                    <form action="">
+                        <label for="pokemon" class="visuallyhidden">Name:</label>
+                        <input type="text" name="pokemon" placeholder="Pokémon" id="pokemon" required>
+                    </form>
+                </div>
+            </div>
+            <!-- styled line bridging sections -->
+            <div class="portfolioLine"></div>
+        </section>
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <div class="content">
+                <h2>Thanks for Stopping By</h2>
+                <!-- links/info -->
+                <div class="contactLinks">
+                    <ul>
+                        <li><a href="https://twitter.com/glenmccann" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/glenrj" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/glen-mccann-56545b17a/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/glenrj_photomode/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="wrapper">
         <!-- no content in footer, just a decorative background image in css -->
