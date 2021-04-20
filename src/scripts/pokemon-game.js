@@ -4,35 +4,27 @@ $(document).ready(function () {
 
 const pokemonGame = {
     totalPokemonCount: 898,
-    prevPokemon: [
-        { 
-            name: "Sample Pokemon",
-            number: 123,
-            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png"
-        },
-        {
-            name: "Sample Pokemon",
-            number: 123,
-            image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png"
-        }
-    ],
+    currentStreak: 0,
     currentPokemon: {
-        name: "Umbreon",
-        number: 197,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
-        status: "hidden"
+        name: "",
+        guessed: false
     }
 }
 
 pokemonGame.init = () => {
-    pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
+    $('.pokemon-game button.start-game').on('click', function() {
+        pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
+        $(this).addClass('hide');
+        $('.pokemon-game button.submit').removeClass('hide');
+    })
+
+    $('.pokemon-game form').on('submit', function(e) {
+        e.preventDefault();
+        pokemonGame.checkGuess();
+    })
 }
 
 pokemonGame.setNewPokemon = (name, number, image) => {
-    pokemonGame.prevPokemon.push(pokemonGame.currentPokemon);
-    if (pokemonGame.prevPokemon.length > 10) {
-        delete pokemonGame.prevPokemon[10];
-    }
     pokemonGame.currentPokemon.name = name;
     pokemonGame.currentPokemon.number = number;
     pokemonGame.currentPokemon.image = image;
@@ -69,4 +61,29 @@ pokemonGame.getNewPokemon = function (total) {
             console.log(error);
         }
     })
+}
+
+pokemonGame.checkGuess = () => {
+    let guess = $('.pokemon-game input#pokemon').val();
+    console.log(`guess: ${guess}`);
+    if (guess == pokemonGame.currentPokemon.name) {
+        console.log("win!");
+        pokemonGame.currentStreak++
+        $('.pokemon-game #pokemonSprite').removeClass('hidden');
+        $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
+        $('.pokemon-game #streak').text(pokemonGame.currentStreak);
+        $('.pokemon-game .right-column').append('<button id="newPokemon">New Pokémon</button>');
+        pokemonGame.newPokemonSubmitHandler();
+    } else {
+        console.log("fail!");
+        //to do: fail state
+    }
+}
+
+pokemonGame.newPokemonSubmitHandler = () => {
+    $('.pokemon-game button#newPokemon').on('click', function() {
+        $(this).remove();
+        pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
+        //todo: form and button reset
+    });
 }

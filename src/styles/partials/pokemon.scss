@@ -11,6 +11,9 @@ section.pokemon-game {
         justify-content: space-around;
         align-items: flex-start;
     }
+    .hide {
+        display: none;
+    }
     .portfolioLine {
         // TODO: unhide portfolio line once new section is styled
         bottom: -40px;
