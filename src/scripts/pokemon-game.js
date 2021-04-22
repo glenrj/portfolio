@@ -1,4 +1,5 @@
 // TODO: make guesses not case sensitive
+// TODO: see if there is a better list of names in the API - Mr. Mime Jr is a good example as it comes up mime-jr
 
 $(document).ready(function () {
     pokemonGame.init();
@@ -75,7 +76,7 @@ pokemonGame.getNewPokemon = function (total) {
 }
 
 pokemonGame.checkGuess = () => {
-    let guess = $('.pokemon-game input#pokemon').val();
+    let guess = $('.pokemon-game input#pokemon').val().toLowerCase();
     if (guess == pokemonGame.currentPokemon.name) {
         pokemonGame.currentStreak++
         $('.pokemon-game #pokemonSprite').removeClass('hidden');
@@ -83,14 +84,9 @@ pokemonGame.checkGuess = () => {
         $('.pokemon-game button.new-pokemon').removeClass('hide');
         $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
         $('.pokemon-game #streak').text(pokemonGame.currentStreak);
-        pokemonGame.newPokemonSubmitHandler();
     } else {
         $('.pokemon-game h3.name').text('Try again');
         pokemonGame.currentStreak = 0;
         $('.pokemon-game #streak').text(pokemonGame.currentStreak);
     }
-}
-
-pokemonGame.newPokemonSubmitHandler = () => {
-    
 }
