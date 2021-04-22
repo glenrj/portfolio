@@ -1,4 +1,3 @@
-// TODO: make guesses not case sensitive
 // TODO: see if there is a better list of names in the API - Mr. Mime Jr is a good example as it comes up mime-jr
 
 $(document).ready(function () {
@@ -40,7 +39,6 @@ pokemonGame.setNewPokemon = (name, number, image) => {
     pokemonGame.currentPokemon.name = name;
     pokemonGame.currentPokemon.number = number;
     pokemonGame.currentPokemon.image = image;
-
     console.log(`new pokémon is: ${pokemonGame.currentPokemon.name}`);
 
     pokemonGame.updateImage(pokemonGame.currentPokemon.image);
@@ -66,6 +64,9 @@ pokemonGame.getNewPokemon = function (total) {
                 name: result.name,
                 number: result.id,
                 image: result.sprites.other["official-artwork"].front_default
+            }
+            if (newPokemon.name == 'mime-jr') {
+                newPokemon.name = 'Mr. Mime Jr';
             }
             pokemonGame.setNewPokemon(newPokemon.name, newPokemon.number, newPokemon.image);
         },
