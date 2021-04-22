@@ -1,3 +1,5 @@
+// TODO: make guesses not case sensitive
+
 $(document).ready(function () {
     pokemonGame.init();
 });
@@ -16,12 +18,21 @@ pokemonGame.init = () => {
         pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
         $(this).addClass('hide');
         $('.pokemon-game button.submit').removeClass('hide');
-    })
+        $('.pokemon-game button.new-pokemon').removeClass('hide');
+        $('.pokemon-game p.current-streak').removeClass('hide');
+    });
 
     $('.pokemon-game form').on('submit', function(e) {
         e.preventDefault();
         pokemonGame.checkGuess();
-    })
+        this.reset();
+    });
+
+    $('.pokemon-game button#newPokemon').on('click', function () {
+        pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
+        $('.pokemon-game h3.name').text('');
+        $('.pokemon-game button.submit').removeClass('hide');
+    });
 }
 
 pokemonGame.setNewPokemon = (name, number, image) => {
@@ -65,25 +76,21 @@ pokemonGame.getNewPokemon = function (total) {
 
 pokemonGame.checkGuess = () => {
     let guess = $('.pokemon-game input#pokemon').val();
-    console.log(`guess: ${guess}`);
     if (guess == pokemonGame.currentPokemon.name) {
-        console.log("win!");
         pokemonGame.currentStreak++
         $('.pokemon-game #pokemonSprite').removeClass('hidden');
+        $('.pokemon-game button.submit').addClass('hide');
+        $('.pokemon-game button.new-pokemon').removeClass('hide');
         $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
         $('.pokemon-game #streak').text(pokemonGame.currentStreak);
-        $('.pokemon-game .right-column').append('<button id="newPokemon">New Pokémon</button>');
         pokemonGame.newPokemonSubmitHandler();
     } else {
-        console.log("fail!");
-        //to do: fail state
+        $('.pokemon-game h3.name').text('Try again');
+        pokemonGame.currentStreak = 0;
+        $('.pokemon-game #streak').text(pokemonGame.currentStreak);
     }
 }
 
 pokemonGame.newPokemonSubmitHandler = () => {
-    $('.pokemon-game button#newPokemon').on('click', function() {
-        $(this).remove();
-        pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
-        //todo: form and button reset
-    });
+    
 }
