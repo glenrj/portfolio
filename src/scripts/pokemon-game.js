@@ -15,6 +15,7 @@ const pokemonGame = {
             pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
             $(this).addClass('hide');
             $('.pokemon-game button.submit').removeClass('hide');
+            $('.pokemon-game button.reveal').removeClass('hide');
             $('.pokemon-game button.new-pokemon').removeClass('hide');
             $('.pokemon-game p.current-streak').removeClass('hide');
         });
@@ -28,10 +29,15 @@ const pokemonGame = {
         $('.pokemon-game button#newPokemon').on('click', function () {
             pokemonGame.getNewPokemon(pokemonGame.totalPokemonCount);
             $('.pokemon-game h3.name').text('');
+            $('.pokemon-game button.reveal').removeClass('hide');
             $('.pokemon-game button.submit').removeClass('hide');
         });
+
+        $('.pokemon-game button#reveal').on('click', function () {
+            pokemonGame.revealPokemon();
+        });
     },
-    
+
     setNewPokemon: (name, number, image) => {
         pokemonGame.currentPokemon.name = name;
         pokemonGame.currentPokemon.number = number;
@@ -40,7 +46,7 @@ const pokemonGame = {
     
         pokemonGame.updateImage(pokemonGame.currentPokemon.image);
     },
-    
+
     updateImage: (newImage) => {
         let pokemonSprite = $("#pokemonSprite");
         if (!pokemonSprite.hasClass("hidden")) {
@@ -48,7 +54,7 @@ const pokemonGame = {
         }
         $(pokemonSprite).attr("src", newImage);
     },
-    
+
     getNewPokemon: function (total) {
         let newPokemonNum = Math.floor(Math.random() * total) + 1;
     
@@ -72,7 +78,7 @@ const pokemonGame = {
             }
         })
     },
-    
+
     checkGuess: () => {
         let guess = $('.pokemon-game input#pokemon').val().toLowerCase();
         if (guess == pokemonGame.currentPokemon.name) {
@@ -82,11 +88,20 @@ const pokemonGame = {
             $('.pokemon-game button.new-pokemon').removeClass('hide');
             $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
             $('.pokemon-game #streak').text(pokemonGame.currentStreak);
+            $('.pokemon-game button.reveal').addClass('hide');
         } else {
             $('.pokemon-game h3.name').text('Try again');
             pokemonGame.currentStreak = 0;
             $('.pokemon-game #streak').text(pokemonGame.currentStreak);
         }
+    },
+
+    revealPokemon: () => {
+        $('.pokemon-game button.reveal').addClass('hide');
+        $("#pokemonSprite").removeClass("hidden");
+        $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
+        pokemonGame.currentStreak = 0;
+        $('.pokemon-game #streak').text(pokemonGame.currentStreak);
     }
 }
 
