@@ -47,14 +47,16 @@ section.pokemon-game {
         padding: 40px 40px 20px 40px;
     }
     .image {
-        padding: 60px;
-        padding-bottom: 20px;
+        padding: 40px 60px 20px 60px;
         background: linear-gradient(-45deg, rgb(233, 134, 104), rgb(201, 93, 146), rgb(71, 171, 207), rgb(69, 206, 174));
 	    background-size: 400% 400%;
 	    -webkit-animation: Gradient 15s ease infinite;
 	    -moz-animation: Gradient 15s ease infinite;
 	    animation: Gradient 15s ease infinite;
         height: 350px;
+        max-height: 400px;
+        max-width: 400px;
+        margin: 0 auto;
         img.hidden {
             filter: contrast(0%) brightness(0%)
         }

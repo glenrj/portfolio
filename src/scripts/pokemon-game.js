@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 const pokemonGame = {
-    totalPokemonCount: 150,
+    totalPokemonCount: 151,
     currentStreak: 0,
     currentPokemon: {
         name: "",
@@ -42,8 +42,6 @@ const pokemonGame = {
         pokemonGame.currentPokemon.name = name;
         pokemonGame.currentPokemon.number = number;
         pokemonGame.currentPokemon.image = image;
-        console.log(`new pokémon is: ${pokemonGame.currentPokemon.name}`);
-    
         pokemonGame.updateImage(pokemonGame.currentPokemon.image);
     },
 
@@ -68,10 +66,8 @@ const pokemonGame = {
                     number: result.id,
                     image: result.sprites.other["official-artwork"].front_default
                 }
-                if (newPokemon.name == 'mime-jr') {
-                    newPokemon.name = 'Mr. Mime Jr';
-                }
-                pokemonGame.setNewPokemon(newPokemon.name, newPokemon.number, newPokemon.image);
+                newPokemon.formattedName = pokemonGame.checkName(newPokemon.name);
+                pokemonGame.setNewPokemon(newPokemon.formattedName, newPokemon.number, newPokemon.image);
             },
             error: function (error) {
                 console.log(error);
@@ -102,6 +98,23 @@ const pokemonGame = {
         $('.pokemon-game h3.name').text(pokemonGame.currentPokemon.name);
         pokemonGame.currentStreak = 0;
         $('.pokemon-game #streak').text(pokemonGame.currentStreak);
+    },
+
+    checkName: (name) => {
+        // fixes for specific pokemon names that aren't in the predicted formal in the API
+        if (name == 'nidoran-f') {
+            return 'Nidoran';
+        } else if (name == 'nidoran-m') {
+            return 'Nidoran';
+        } else if (name == 'farfetchd') {
+            return "Farfetch'd";
+        } else if (name == 'mr-mime') {
+            return 'Mr. Mime';
+        } else if (name == 'mime-jr') {
+            return 'Mr. Mime Jr';
+        } else {
+            return name;
+        }
     }
 }
 
