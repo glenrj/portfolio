@@ -49,6 +49,9 @@ section.pokemon-game {
         padding: 40px 40px 20px 40px;
         &:first-of-type {
             padding-bottom: 0;
+            h3 {
+                color: white;
+            }
         }
     }
     .image {
