@@ -1,5 +1,5 @@
 .DS_Store
 *.css
-*.sass-cache
+.sass-cache/*
 node_modules/*
 build
