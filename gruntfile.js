@@ -18,11 +18,7 @@ module.exports = function(grunt) {
             css: {
             files: '**/*.scss',
             tasks: ['sass'] 
-            },
-            html: {
-                files: 'src/*.html',
-                tasks: ['copy:html'] 
-                }
+            }
         },
         copy: {
             html: {
@@ -38,10 +34,10 @@ module.exports = function(grunt) {
                 dest: './build/styles'
             },
             images: {
-                flatten: true,
                 expand: true,
-                src: './src/assets/*',
-                dest: './build/assets/'
+                cwd: 'src/assets',
+                src: '**',
+                dest: './build/assets',
             },
             scripts: {
                 flatten: true,
@@ -49,11 +45,16 @@ module.exports = function(grunt) {
                 src: './src/scripts/*',
                 dest: './build/scripts/'
             }
+        },
+        clean: {
+            folder: ['./build']
         }
     });
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+
     grunt.registerTask('default',['watch']);
-    grunt.registerTask('build', ['sass', 'copy:html', 'copy:css', 'copy:images', 'copy:scripts']);
+    grunt.registerTask('build', ['clean', 'sass', 'copy:html', 'copy:css', 'copy:images', 'copy:scripts']);
 }
