@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -19,13 +18,17 @@ module.exports = function(grunt) {
             css: {
             files: '**/*.scss',
             tasks: ['sass'] 
-            }
+            },
+            html: {
+                files: 'src/*.html',
+                tasks: ['copy:html'] 
+                }
         },
         copy: {
             html: {
                 flatten: true,
                 expand: true,
-                src: './src/index.html',
+                src: './src/*.html',
                 dest: './build/'
             },
             css: {
