@@ -14,6 +14,8 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald:300,400" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f810260897.js" crossorigin="anonymous"></script>
     <!-- jQuery CDN -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
@@ -46,7 +48,7 @@
                 <h1>Hello! I'm Glen McCann</h1>
                 <div class="headerLine"></div>
                 <p class="about">
-                    I'm a jack-of-all-trades with experience in sound design, live audio mixing, programming, and electronics. I'm passionate about accessibility, theatre, and creative troubleshooting.
+                    I'm a jack-of-all-trades technician, currently enrolled in Sheridan College's Electronics Engineering Technician program. I have experience in theatre sound as a sound designer and operator specializing in musicals, and in coding as a web developer.
                 </p>
             </div>
         </div>
@@ -55,54 +57,35 @@
     </header>
     <!-- MAIN -->
     <main class="wrapper">
-        <!-- POKÉMON GAME SECTION -->
-        <section class="pokemon-game" id="pokemon-game">
+        <!-- SKILLS SECTION  -->
+        <section class="skills" id="skills">
             <div class="content">
-                <!-- left column - pokemon image -->
-                <div class="column">
-                    <div class="image">
-                        <img src="./assets/blank.png" alt="Silhouette of a mystery pokemon to be guessed" id="pokemonSprite">
+                <h2>Skills</h2>
+                <!-- div of skills -->
+                <div class="skillIcons">
+                    <!-- css3 -->
+                    <div class="skill">
+                        <i class="fa-solid fa-headphones"></i>
+                        <p>Sound Design</p>
                     </div>
-                    <h3 class="name"></h3>
-                </div>
-                <!-- right column - description and game -->
-                <div class="column">
-                    <h2>Who's That Pokémon?</h2>
-                    <h3>Generation 1</h3>
-                    <p>Can you guess the pokémon based on it's silhouette?</p>
-                    <form action="">
-                        <label for="pokemon" class="visuallyhidden">Name:</label>
-                        <input type="text" name="pokemon" placeholder="Pokémon" id="pokemon" required>
-                        <button class="submit hide link" id="submit">
-                            <p>Submit</p>
-                            <div class="linkArrow">
-                                <i class="fas fa-angle-right"></i>
-                            </div>
-                        </button>
-                    </form>
-                    <button class="start-game link">
-                        <p>Start Game</p>
-                        <div class="linkArrow">
-                            <i class="fas fa-angle-right"></i>
-                        </div>
-                    </button>
-                    <button class="link reveal hide" id="reveal">
-                        <p>Reveal Pokémon</p>
-                        <div class="linkArrow">
-                            <i class="fas fa-angle-right"></i>
-                        </div>
-                    </button>
-                    <button class="link new-pokemon hide" id="newPokemon">
-                        <p>New Pokémon</p>
-                        <div class="linkArrow">
-                            <i class="fas fa-angle-right"></i>
-                        </div>
-                    </button>
-                    <p class="current-streak hide">Current Streak: <span id="streak">0</span></p>
+                    <!-- html5 -->
+                    <div class="skill">
+                        <i class="fa-solid fa-sliders"></i>
+                        <p>Sound Mixing</p>
+                    </div>
+                    <!-- sass -->
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Programming</p>
+                    </div>
+                    <!-- javascript -->
+                    <div class="skill">
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Electronics</p>
+                    </div>
                 </div>
             </div>
-            <!-- styled line bridging sections --TODO: set height once sections are done -->
-            <div class="portfolioLine"></div>
+            <!-- end of skills -->
         </section>
         <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
@@ -110,6 +93,7 @@
                 <h2>Drop A Line</h2>
                 <!-- links/info -->
                 <div class="contactLinks">
+                    <p class="email">glenmccann2@gmail.com</p>
                     <ul>
                         <li><a href="https://twitter.com/glenmccann" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://github.com/glenrj" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -125,7 +109,6 @@
     </footer>
     <!-- JavaScript -->
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/pokemon-game.js"></script>
 </body>
 
 </html>
