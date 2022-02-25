@@ -1,0 +1,49 @@
+        <!-- POKÉMON GAME SECTION -->
+        <section class="pokemon-game" id="pokemon-game">
+            <div class="content">
+                <!-- left column - pokemon image -->
+                <div class="column">
+                    <div class="image">
+                        <img src="./assets/blank.png" alt="Silhouette of a mystery pokemon to be guessed" id="pokemonSprite">
+                    </div>
+                    <h3 class="name"></h3>
+                </div>
+                <!-- right column - description and game -->
+                <div class="column">
+                    <h2>Who's That Pokémon?</h2>
+                    <h3>Generation 1</h3>
+                    <p>Can you guess the pokémon based on it's silhouette?</p>
+                    <form action="">
+                        <label for="pokemon" class="visuallyhidden">Name:</label>
+                        <input type="text" name="pokemon" placeholder="Pokémon" id="pokemon" required>
+                        <button class="submit hide link" id="submit">
+                            <p>Submit</p>
+                            <div class="linkArrow">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </button>
+                    </form>
+                    <button class="start-game link">
+                        <p>Start Game</p>
+                        <div class="linkArrow">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </button>
+                    <button class="link reveal hide" id="reveal">
+                        <p>Reveal Pokémon</p>
+                        <div class="linkArrow">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </button>
+                    <button class="link new-pokemon hide" id="newPokemon">
+                        <p>New Pokémon</p>
+                        <div class="linkArrow">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </button>
+                    <p class="current-streak hide">Current Streak: <span id="streak">0</span></p>
+                </div>
+            </div>
+            <!-- styled line bridging sections --TODO: set height once sections are done -->
+            <div class="portfolioLine"></div>
+        </section>
