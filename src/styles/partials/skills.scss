@@ -1,9 +1,13 @@
 // skills section styles
-
 .skills {
     padding: 8% 0;
     h2 {
         text-align: center;
+    }
+
+    // inner content wrapper
+    .content {
+        max-width: 900px;
     }
 
     // icons container
