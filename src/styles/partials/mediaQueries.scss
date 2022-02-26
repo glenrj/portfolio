@@ -27,13 +27,6 @@
         top: 92%;
     }
 
-    // skills section
-    .skills {
-        .content {
-            width: 75%;
-        }
-    }
-
     // portfolio section
     .portfolio {
         .info {
@@ -147,9 +140,18 @@
         }
 
         .skill {
-            width: 100px;
+            width: 140px;
         }
 
+    }
+}
+
+@media (max-width: 700px) {
+    //skills section
+    .skills {
+        .skill {
+            width: 187px;
+        }
     }
 }
 
@@ -166,6 +168,13 @@
         height: 75px;
     }
 
+    //skills section
+    .skills {
+        .skill {
+            width: 150px;
+        }
+    }
+
     // contact section
     .contact {
         .content {
@@ -180,6 +189,19 @@
         .siteImage {
             min-height: 100px;
             max-height: 400px;
+        }
+    }
+}
+
+// 400px
+@media (max-width: 450px) {
+    //skills section
+    .skills {
+        .skill {
+            margin-bottom: 6px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
     }
 }
