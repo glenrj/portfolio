@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8% 0%;
-    padding-bottom: 0%;
+    padding: 0;
 
     h2 {
         text-align: center;
@@ -31,6 +30,7 @@
         justify-content: space-between;
         font-size: 1.4rem;
         align-items: flex-start;
+        // margin-top: 50px;
     }
     
     a {
