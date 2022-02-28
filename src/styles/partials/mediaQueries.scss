@@ -1,93 +1,17 @@
-// 1400px
-@media (max-width: 1400px) {
-    //portfolio section
-    .portfolio {
-        .siteImage {
-            max-height: 400px;
-        }
-    }
-}
-
-
-// 1300px
-@media (max-width: 1300px) {
-    //portfolio section
-    .portfolio {
-        .siteImage {
-            max-height: 300px;
-            margin-top: 100px;
-        }
-    }
-}
-
 // 1050px
 @media (max-width: 1050px) {
     // header
     .sectionLine {
         top: 92%;
     }
-
-    // skills section
-    .skills {
-        .content {
-            width: 75%;
-        }
-    }
-
-    // portfolio section
-    .portfolio {
-        .info {
-            padding: 1% 10%;
-        }
-        .siteImage {
-            width: calc(50% - 80px);
-            max-height: 600px;
-            margin-top: 0;
-            &.beachstays img,
-            &.your-story img {
-                transform: translateY(0px);
-            }
-        }
-    }
 }
 
 // 1000px
 @media (max-width: 1000px) {
-    // portfolio section
-    .portfolio {
-        padding-bottom: 50px;
-
-        .item {
-            flex-direction: column;
-            padding: 50px 0px;
-
-            .info {
-                padding: 50px 0px;
-            }
-
-            .info,
-            .siteImage {
-                margin: 0 auto;
-            }
-            
-            .siteImage {
-                overflow: hidden;
-                min-height: 300px;
-                box-shadow: -10px -10px 0px $accent;
-            }
-        }
-
-        .reverse {
-            flex-direction: column-reverse;
-        }
+      // contact section
+    .contact {
+        padding-top: 8%;
     }
-
-    .portfolioLine {
-        height: 75px;
-        bottom: -37.5px;
-    }
-    
-    // contact section
     .contactLinks {
         width: 80%;
     }
@@ -114,14 +38,6 @@
     .sectionLine {
         top: 95.5%;
     }
-
-    // portfolio section 
-    .portfolio {
-        .info,
-        .siteImage {
-            width: 80%;
-        }
-    }
     
     // contact section
     .contact {
@@ -147,9 +63,18 @@
         }
 
         .skill {
-            width: 100px;
+            width: 140px;
         }
 
+    }
+}
+
+@media (max-width: 700px) {
+    //skills section
+    .skills {
+        .skill {
+            width: 187px;
+        }
     }
 }
 
@@ -166,6 +91,13 @@
         height: 75px;
     }
 
+    //skills section
+    .skills {
+        .skill {
+            width: 150px;
+        }
+    }
+
     // contact section
     .contact {
         .content {
@@ -174,12 +106,15 @@
     }
 }
 
-// 450px
+// 400px
 @media (max-width: 450px) {
-    .portfolio {
-        .siteImage {
-            min-height: 100px;
-            max-height: 400px;
+    //skills section
+    .skills {
+        .skill {
+            margin-bottom: 6px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
     }
 }
