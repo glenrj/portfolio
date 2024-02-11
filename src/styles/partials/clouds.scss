@@ -27,16 +27,11 @@
     
     .siteImage {
         max-height: 600px;
-        box-shadow: -20px -20px 0px $accent;
         width: calc(35% - 80px);
         margin: 0 auto;
-        &:nth-of-type(2) {
-            box-shadow: 20px 20px 0px $accent;
+        img {
+            border: 8px solid white;
         }
-        // &.beachstays img,
-        // &.your-story img {
-        //     transform: translateY(4px);
-        // }
     }
 
     .info {
@@ -146,9 +141,7 @@
             }
             
             .siteImage {
-                overflow: hidden;
                 min-height: 300px;
-                box-shadow: -10px -10px 0px $accent;
             }
         }
 
