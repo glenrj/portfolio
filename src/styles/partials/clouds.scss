@@ -3,9 +3,13 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/portfolioBackground.jpg);
     background-size: cover;
     position: relative;
-
+    padding: 8% 0;
     h2 {
         color: white;
+        text-align: center;
+    }
+    h3 {
+        font-weight: bold;
     }
 
     .item {
@@ -29,10 +33,10 @@
         &:nth-of-type(2) {
             box-shadow: 20px 20px 0px $accent;
         }
-        &.beachstays img,
-        &.your-story img {
-            transform: translateY(4px);
-        }
+        // &.beachstays img,
+        // &.your-story img {
+        //     transform: translateY(4px);
+        // }
     }
 
     .info {
