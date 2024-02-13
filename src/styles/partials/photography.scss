@@ -1,0 +1,127 @@
+body.photography {
+  header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      min-height: 16px;
+      background-position: center;
+      img {
+          width: 60px;
+      }
+  }
+
+  nav {
+      position: unset;
+      padding: 0;
+  }
+
+  .nav-left {
+      display: flex;
+      max-width: none;
+  }
+
+  h1 {
+      color: $dark-accent;
+  }
+    
+  .slideshow {
+      // Photo by David von Diemar on Unsplash
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/portfolioBackground.jpg);
+      background-size: cover;
+      position: relative;
+      padding: 2vh;
+      height: 102vh;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+      position: relative;
+      margin: 0 auto;
+      height: 96vh;
+      display: flex;
+      align-items: center;
+      img {
+          width: unset;
+          max-width: 100%;
+          max-height: 75vh;
+          border: 8px solid white;
+      }
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: calc(100% - 104px);
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: 0;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border: 1px solid white;
+    user-select: none;
+    background: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Button hover and focus states */
+  .prev:hover, .next:hover, .prev:focus, .next:focus {
+    background-color: $primary;
+    color: black;
+  }
+
+  /* Caption text - not currently used */
+  p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  // MEDIA QUERIES
+  // 700px
+  @media (max-width: 700px) {
+      .slideshow-container img {
+          max-width: 80%;
+      }
+      
+      header {
+          flex-direction: column;
+      }
+    }
+  @media (min-wdth: 550px) {
+      h1 {
+          flex-shrink: 0;
+      }
+  }
+}

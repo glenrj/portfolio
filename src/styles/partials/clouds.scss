@@ -1,0 +1,213 @@
+.clouds {
+    // Photo by David von Diemar on Unsplash
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/portfolioBackground.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 8% 0;
+
+    h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 80px;
+        &:last-of-type {
+            padding-bottom: 80px;
+        }
+    }
+    
+    .siteImage {
+        max-height: 600px;
+        width: 35%;
+        margin: 0 auto;
+        img {
+            border: 8px solid white;
+        }
+    }
+    
+    .info {
+        width: 50%;
+        padding: 0 10%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    .scroll {
+        overflow-y: scroll;
+    }
+
+    .description {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        a {
+            text-decoration: none;
+            color: darkgray;
+            &:hover,
+            &:focus {
+                color: $accent;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// styled div bridging the two sections
+.cloudsLine {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(0,0,0, 1) 50%);
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+}
+
+//MEDIA QUERIES
+// 1400px
+@media (max-width: 1400px) {
+    //clouds section
+    .clouds {
+        .siteImage {
+            max-height: 400px;
+        }
+    }
+}
+
+
+// 1300px
+@media (max-width: 1300px) {
+    //clouds section
+    .clouds {
+        .siteImage {
+            max-height: 300px;
+            img {
+                border: 4px solid white;
+            }
+        }
+    }
+}
+
+// 1050px
+@media (max-width: 1050px) {
+    // header
+    .sectionLine {
+        top: 92%;
+    }
+
+    // clouds section
+    .clouds {
+        .info {
+            padding: 1% 10%;
+        }
+        .siteImage {
+            width: calc(50% - 80px);
+            max-height: 600px;
+            margin-top: 0;
+        }
+    }
+}
+
+// 1000px
+@media (max-width: 1000px) {
+    // clouds section
+    .clouds {
+        padding-bottom: 50px;
+
+        .item {
+            flex-direction: column;
+            padding: 50px 0px;
+
+            .info {
+                padding: 50px 0px;
+                width: 100%;
+            }
+
+            .info,
+            .siteImage {
+                margin: 0 auto;
+            }
+            
+            .siteImage {
+                min-height: 300px;
+                width: 100%
+            }
+        }
+
+        .reverse {
+            flex-direction: column-reverse;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .cloudsLine {
+        height: 75px;
+        bottom: -37.5px;
+    }
+    
+    // contact section
+    .contact {
+        padding-top: 8%;
+    }
+    .contactLinks {
+        width: 80%;
+    }
+}
+
+// 900px
+@media (max-width: 900px) {
+    // header
+    header {
+        .content {
+            flex-direction: column;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            padding: 10% 0;
+            
+            .headshot {
+                margin: 25px 0;
+                width: 55%;
+            }
+        }
+    }
+
+    .sectionLine {
+        top: 95.5%;
+    }
+
+    // clouds section 
+    .clouds {
+        .info,
+        .siteImage {
+            width: 80%;
+        }
+    }
+    
+    // contact section
+    .contact {
+        .upperForm {
+            flex-direction: column;
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// 450px
+@media (max-width: 450px) {
+    .clouds {
+        .siteImage {
+            min-height: 100px;
+            max-height: 400px;
+        }
+    }
+}
