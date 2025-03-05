@@ -1,0 +1,38 @@
+section.games {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/gamesBackground.jpg);
+    // background-color: black;
+    background-size: cover;
+    background-position: 0% 50%;
+    position: relative;
+    padding: 8% 0;
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+    }
+    .info {
+        width: 35%;
+    }
+    .picoPlayer {
+        width: 50%;
+    }
+    iframe {
+        width: 512px;
+        height: 512px;
+        border: none;
+        overflow: hidden;
+    }
+    #cart_player_knucklebones-7 {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        max-height: none;
+    }
+}
