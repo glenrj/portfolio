@@ -1,0 +1,95 @@
+section.games {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5)), url(../assets/gamesBackground.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+    position: relative;
+    padding: 8% 0;
+    h2 {
+        text-align: center;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        .picoPlayer {
+            width: 50%;
+        }
+        .info {
+            width: 35%;
+        }
+    }
+    iframe {
+        width: 100%;
+        min-height: 31vw;
+        border: none;
+        overflow: hidden;
+    }
+    #cart_player_knucklebones-7 {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        max-height: none;
+    }
+}
+// 1050px
+@media (max-width: 1050px) {
+    // games section
+    section.games {
+        padding-bottom: 50px;
+        .item {
+            flex-direction: column;
+            padding: 50px 0px;
+            .info {
+                padding: 50px 0px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .picoPlayer {
+                width: 48vw;
+                height: 48vw;
+                margin: 0 auto;
+            }
+            iframe {
+                width: 48vw;
+                height: 48vw;
+            }
+        }
+        .reverse {
+            flex-direction: column-reverse;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .cloudsLine {
+        height: 75px;
+        bottom: -37.5px;
+    }
+}
+
+// 900px
+@media (max-width: 900px) {
+    // games section 
+    section.games {
+        .item {
+            .picoPlayer {
+                width: 60vw;
+                height: 60vw;
+                margin: 0 auto;
+            }
+            iframe {
+                width: 60vw;
+                height: 60vw;
+            }
+        }
+        .reverse {
+            flex-direction: column-reverse;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

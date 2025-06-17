@@ -58,13 +58,22 @@
 }
 
 // styled div bridging the two sections
-.cloudsLine {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(0,0,0, 1) 50%);
+.cloudsLine,
+.gamesLine {
     width: 1px;
     height: 100px;
     position: absolute;
     bottom: -50px;
     left: 50%;
+    z-index: 99;
+}
+
+.gamesLine {
+    background: white;
+}
+
+.cloudsLine {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(0,0,0, 1) 50%);
 }
 
 //MEDIA QUERIES
@@ -146,7 +155,8 @@
         }
     }
 
-    .cloudsLine {
+    .cloudsLine,
+    .gamesLine {
         height: 75px;
         bottom: -37.5px;
     }
